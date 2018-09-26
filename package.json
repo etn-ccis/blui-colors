@@ -1,0 +1,28 @@
+{
+  "name": "PXBlueColors",
+  "version": "1.0.0",
+  "description": "PX Blue colors for Eaton applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pxblue/colors.git"
+  },
+  "keywords": [
+    "PXBlue",
+    "colors",
+    "Eaton",
+    "Power",
+    "Xpert",
+    "quality",
+    "lighting"
+  ],
+  "author": "px-blue <pxblue@eaton.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pxblue/colors/issues"
+  },
+  "homepage": "https://github.com/pxblue/colors#readme"
+}
