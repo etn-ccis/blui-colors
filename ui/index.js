@@ -1,1 +1,3 @@
-export * from './palette';
+import * as Palette from './palette';
+
+export {Palette};
