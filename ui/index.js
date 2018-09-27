@@ -1,1 +1,1 @@
-eport * from './palette';
+export * from './palette';
