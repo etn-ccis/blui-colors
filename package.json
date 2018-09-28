@@ -1,6 +1,6 @@
 {
   "name": "PXBlueColors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PX Blue colors for Eaton applications",
   "main": "index.js",
   "scripts": {
