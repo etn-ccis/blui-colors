@@ -33,7 +33,7 @@ Incorporating these colors into your project is handled differently depending on
 ### Angular or NativeScript
 ```
 // in styles.scss or your top-level sass file
-import '~@pxblue/colors/palette.scss'
+@import '~@pxblue/colors/palette.scss'
 ...
 background-color: map-get($pxb-blue, 500)
 ```
