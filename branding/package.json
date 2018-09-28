@@ -1,6 +1,6 @@
 {
   "name": "@pxblue/colors-branding",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Eaton Branding colors for Eaton applications",
   "main": "./dist/index.js",
   "scripts": {
