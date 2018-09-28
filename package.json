@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish:colors": "cd ui && npm version patch && npm publish && exit 1",
-    "publish:colors-branding": "cd branding && npm version patch && npm publish && exit 1",
-    "publish:all": "cd ui && npm version patch && npm publish && cd ../branding && npm version patch && npm publish && exit 1"
+    "publish:colors": "cd ui && npm version patch && npm publish && exit 0",
+    "publish:colors-branding": "cd branding && npm version patch && npm publish && exit 0",
+    "publish:all": "cd ui && npm version patch && npm publish && cd ../branding && npm version patch && npm publish && exit 0"
   },
   "repository": {
     "type": "git",
