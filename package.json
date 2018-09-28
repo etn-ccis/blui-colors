@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish:colors": "cd ui && npm version patch && npm publish && cd .. && exit 0",
-    "publish:colors-branding": "cd branding && npm version patch && npm publish && cd .. && exit 0",
+    "build:colors": "cd ui && npm run build && cd ..",
+    "build:colors-branding": "cd branding && npm run build && cd ..",
+    "build:all":"npm run build:colors && npm run build:colors-branding",
+    "publish:colors": "npm run build:colors && cd ui && npm version patch && npm publish && cd .. && exit 0",
+    "publish:colors-branding": "npm run build:colors-branding && cd branding && npm version patch && npm publish && cd .. && exit 0",
     "publish:all": "npm run publish:colors && npm run publish:colors-branding && exit 0"
   },
   "repository": {
