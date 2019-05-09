@@ -2,20 +2,25 @@
 
 This package contains branding color definitions. These are intended for use in supplemental materials (e.g., charting), but not as primary UI colors. 
 
-It contains the following color defintions:
+It contains the following color definitions:
 ```
-$teal
-$citron
-$pine
-$emerald
-$wine
-$crimson
-$sunset
-$rust
-$navy
-$sky
+$brand-blue
+$brand-teal
+$brand-citron
+$brand-pine
+$brand-emerald
+$brand-wine
+$brand-crimson
+$brand-sunset
+$brand-rust
+$brand-navy
+$brand-sky
+$brand-sage
+$brand-toad
+$brand-butter
+$brand-goldenrod
+$brand-trophy
 ```
-> NOTE: only '500'-value colors are available in this package.
 
 ## Installation
 Install with npm
@@ -35,7 +40,7 @@ Incorporating these colors into your project is handled differently depending on
 // in styles.scss or your top-level sass file
 @import '~@pxblue/colors-branding/palette.scss'
 ...
-background-color: map-get($rust, 500)
+background-color: map-get($brand-rust, 500)
 ```
 
 ### React or React Native
