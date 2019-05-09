@@ -24,6 +24,35 @@ export const blue = {
     'contrastDefaultColor': 'light'
 };
 
+export const white = {
+    50: '#ffffff',
+    100: '#fdfdfd',
+    200: '#f7f8f8',
+    300: '#f3f5f5',
+    400: '#f1f2f2',
+    500: '#eef0f0',
+    600: '#eceeee',
+    700: '#e9ecec',
+    800: '#e7e9e9',
+    900: '#e2e5e5',
+    'contrastDefaultColor': 'dark'
+};
+
+// TBD
+export const oledBlack = {
+    50: '#202224',
+    100: '#202224',
+    200: '#182022',
+    300: '#182022',
+    400: '#13181b',
+    500: '#13181b',
+    600: '#0b0e0f',
+    700: '#0b0e0f',
+    800: '#000000',
+    900: '#000000',
+    'contrastDefaultColor': 'light'
+};
+
 export const lightBlue = {
     50: '#e0f1fd',
     100: '#b3dbfb',
