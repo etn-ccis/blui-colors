@@ -1,13 +1,13 @@
 {
   "name": "PXBlueColors",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "PX Blue colors for Eaton applications",
   "main": "index.js",
   "scripts": {
     "test": "./buildTest.sh",
     "build:colors": "cd ui && yarn build && cd ..",
     "build:colors-branding": "cd branding && yarn build && cd ..",
-    "build:all":"yarn build:colors && yarn build:colors-branding",
+    "build:all": "yarn build:colors && yarn build:colors-branding",
     "publish:colors": "yarn build:colors && cd ui && npm version patch && npm publish && cd .. && exit 0",
     "publish:colors-branding": "yarn build:colors-branding && cd branding && npm version patch && npm publish && cd .. && exit 0",
     "publish:all": "yarn publish:colors && yarn publish:colors-branding && exit 0"
