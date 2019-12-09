@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/pxblue/colors/issues"
   },
-  "homepage": "https://github.com/pxblue/colors#readme"
+  "homepage": "https://github.com/pxblue/colors#readme",
+  "devDependencies": {
+    "typescript": "3.7.2^"
+  }
 }
