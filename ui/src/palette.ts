@@ -6,7 +6,9 @@ All rights reserved.
 This code is licensed under the BSD-3 license found in the LICENSE file in the root directory of this source tree and at https://opensource.org/licenses/BSD-3-Clause.
 **/
 
-export const blue = {
+import { UIColorType } from '../../colorTypes'
+
+export const blue : UIColorType = {
     50: '#e0eff8',
     100: '#b3d7ec',
     200: '#80bde0',
@@ -24,7 +26,7 @@ export const blue = {
     'contrastDefaultColor': 'light'
 };
 
-export const white = {
+export const white : UIColorType = {
     50: '#ffffff',
     100: '#fdfdfd',
     200: '#f7f8f8',
@@ -39,7 +41,7 @@ export const white = {
 };
 
 // TBD
-export const oledBlack = {
+export const oledBlack : UIColorType = {
     50: '#202224',
     100: '#202224',
     200: '#182022',
@@ -53,7 +55,7 @@ export const oledBlack = {
     'contrastDefaultColor': 'light'
 };
 
-export const lightBlue = {
+export const lightBlue : UIColorType = {
     50: '#e0f1fd',
     100: '#b3dbfb',
     200: '#80c4f9',
@@ -71,7 +73,7 @@ export const lightBlue = {
     'contrastDefaultColor': 'dark'
 };
 
-export const green = {
+export const green : UIColorType = {
     50: '#e7f6e4',
     100: '#c4e9bc',
     200: '#9cdb90',
@@ -89,7 +91,7 @@ export const green = {
     'contrastDefaultColor': 'light'
 };
 
-export const red = {
+export const red : UIColorType = {
     50: '#f9e8e8',
     100: '#efc5c5',
     200: '#e59e9e',
@@ -107,7 +109,7 @@ export const red = {
     'contrastDefaultColor': 'light'
 };
 
-export const orange = {
+export const orange : UIColorType = {
     50: '#feefe4',
     100: '#fcd6bc',
     200: '#fabb90',
@@ -125,7 +127,7 @@ export const orange = {
     'contrastDefaultColor': 'light'
 };
 
-export const gold = {
+export const gold : UIColorType = {
     50: '#fdf5e4',
     100: '#fbe6bc',
     200: '#f8d58f',
@@ -143,7 +145,7 @@ export const gold = {
     'contrastDefaultColor': 'dark'
 };
 
-export const purple = {
+export const purple : UIColorType = {
     50: '#f3e8fd',
     100: '#e0c5fa',
     200: '#cc9ff7',
@@ -161,7 +163,7 @@ export const purple = {
     'contrastDefaultColor': 'light'
 };
 
-export const black = {
+export const black : UIColorType = {
     50: '#e8eaea',
     100: '#c6cacc',
     200: '#a1a7aa',
@@ -179,7 +181,7 @@ export const black = {
     'contrastDefaultColor': 'light'
 };
 
-export const gray = {
+export const gray : UIColorType = {
     50: '#eef0f0',
     100: '#d5d8da',
     200: '#b9bfc2',
@@ -197,7 +199,7 @@ export const gray = {
     'contrastDefaultColor': 'light'
 };
 
-export const yellow = {
+export const yellow : UIColorType = {
     50: '#fdf9e6',
     100: '#fbefc1',
     200: '#f8e597',
