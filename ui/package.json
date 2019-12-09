@@ -2,7 +2,7 @@
   "name": "@pxblue/colors",
   "version": "1.0.13",
   "description": "PX Blue colors for Eaton applications",
-  "main": "./dist/index.ts",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "yarn && babel src --presets babel-preset-env --out-dir dist"
