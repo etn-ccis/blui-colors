@@ -6,12 +6,12 @@ The repository has the following directory structure:
 
 ```
 |── /ui                 // standard PX Blue colors (for UIs)
-|   |── index.js                            
-|   |── palette.js      // color definitions (JS)
+|   |── index.ts                            
+|   |── palette.ts      // color definitions (TS)
 |   └── palette.scss    // color definitions (SCSS)
 └── /branding           // branding colors (for charting, etc.)
-    |── index.js                            
-    |── palette.js      // color definitions (JS)
+    |── index.ts                            
+    |── palette.ts      // color definitions (TS)
     └── palette.scss    // color definitions (SCSS)
 ```
 
