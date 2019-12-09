@@ -8,6 +8,19 @@ This code is licensed under the BSD-3 license found in the LICENSE file in the r
 
 import { BrandingColorType } from '../../colorTypes'
 
+export const blue : BrandingColorType = {
+    50: '#e0ecf5',
+    100: '#b3cfe6',
+    200: '#80afd5',
+    300: '#4d8ec4',
+    400: '#2676b8',
+    500: '#005eab',
+    600: '#0056a4',
+    700: '#004c9a',
+    800: '#004291',
+    900: '#003180'
+}
+
 export const teal : BrandingColorType = {
     50: '#e0f6f5',
     100: '#b3e8e5',
