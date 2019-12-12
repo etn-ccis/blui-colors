@@ -189,7 +189,7 @@ export const goldenrod : PXBlueColor = {
     800: '#f0a920',
     900: '#ee9b14'
 };
-export const trophy  = {
+export const trophy : PXBlueColor = {
     50: '#fdf6e7',
     100: '#fbe8c2',
     200: '#f9d999',

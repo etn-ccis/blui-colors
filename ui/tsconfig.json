@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
       "target": "es5",
-      "module": "commonjs",
+      "module": "amd",
       "declaration": true,
-      "outDir": "dist",
+      "outFile": "./dist/index.js",
       "strict": true,
       "lib": ["es2015", "dom"]
   },
