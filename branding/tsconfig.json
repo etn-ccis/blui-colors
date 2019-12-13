@@ -1,16 +1,16 @@
 {
-  "compilerOptions": {
-      "target": "es5",
-      "module": "AMD",
-      "declaration": true,
-      "outFile": "./dist/index.js",
-      "strict": true,
-      "lib": ["es2015", "dom"]
-  },
-  "include": [
-      "src/*"
-  ],
-  "exclude": [
-      "node_modules"
-  ]
-}
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": true,
+        "outDir": "./dist",
+        "strict": true,
+        "lib": ["es2015", "dom"]
+    },
+    "include": [
+        "src/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+  }
