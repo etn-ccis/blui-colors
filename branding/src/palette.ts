@@ -6,7 +6,23 @@ All rights reserved.
 This code is licensed under the BSD-3 license found in the LICENSE file in the root directory of this source tree and at https://opensource.org/licenses/BSD-3-Clause.
 **/
 
-import { PXBlueColor } from '../../types/colorType'
+type PXBlueColor = {
+    50: string,
+    100: string,
+    200: string,
+    300: string,
+    400: string,
+    500: string,
+    600: string,
+    700: string,
+    800: string,
+    900: string,
+    A100?: string,
+    A200?: string,
+    A400?: string,
+    A700?: string,
+    contrastDefaultColor?: string
+};
 
 export const blue : PXBlueColor = {
     50: '#e0ecf5',
