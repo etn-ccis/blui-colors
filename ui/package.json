@@ -1,6 +1,6 @@
 {
   "name": "@pxblue/colors",
-  "version": "1.0.13",
+  "version": "2.0.0",
   "description": "PX Blue colors for Eaton applications",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",

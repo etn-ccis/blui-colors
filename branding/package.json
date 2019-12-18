@@ -2,7 +2,7 @@
   "name": "@pxblue/colors-branding",
   "version": "2.0.2",
   "description": "Eaton Branding colors for Eaton applications",
-  "main": "./dist/ndex.js",
+  "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
