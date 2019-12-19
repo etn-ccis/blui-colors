@@ -33,7 +33,7 @@ yarn add @pxblue/colors
 ## Usage
 Incorporating these colors into your project is handled differently depending on the framework that you are using.
 
-### Angular or NativeScript
+### Angular or Ionic
 ```
 // in styles.scss or your top-level sass file
 @import '~@pxblue/colors/palette.scss'

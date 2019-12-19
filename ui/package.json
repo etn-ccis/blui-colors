@@ -1,11 +1,12 @@
 {
   "name": "@pxblue/colors",
-  "version": "1.0.13",
+  "version": "2.0.0",
   "description": "PX Blue colors for Eaton applications",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "yarn && babel src --presets babel-preset-env --out-dir dist"
+    "build": "yarn && tsc"
   },
   "repository": {
     "type": "git",
@@ -27,7 +28,6 @@
   },
   "homepage": "https://github.com/pxblue/colors#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0"
+    "typescript": "^3.7.3"
   }
 }

@@ -1,8 +1,8 @@
 {
-  "name": "PXBlueColors",
-  "version": "2.0.0",
+  "name": "pxbluecolors",
+  "version": "3.0.0",
   "description": "PX Blue colors for Eaton applications",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "./buildTest.sh",
     "build:colors": "cd ui && yarn build && cd ..",
@@ -30,5 +30,8 @@
   "bugs": {
     "url": "https://github.com/pxblue/colors/issues"
   },
-  "homepage": "https://github.com/pxblue/colors#readme"
+  "homepage": "https://github.com/pxblue/colors#readme",
+  "devDependencies": {
+    "typescript": "^3.7.2"
+  }
 }
