@@ -29,5 +29,13 @@
   "homepage": "https://github.com/pxblue/colors#readme",
   "devDependencies": {
     "typescript": "^3.7.3"
-  }
+  },
+  "files": [
+      "package.json",
+      "readme.md",
+      "LICENSE",
+      "changelog.md",
+      "dist/",
+      "palette.scss"
+  ]
 }
