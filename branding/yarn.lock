@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@pxblue/types@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@pxblue/types/-/types-1.0.0.tgz#befa98a12ae95a407c252399c69677aa7427d97e"
+  integrity sha512-K0liTITRTZfv7n/2UmbP0g/nTelr3aaDlA5XleGqC+1hLRab20MpVaOSgLRiU8+4f0vayGtbBm63HyHgoXMROw==
+
 typescript@^3.7.3:
   version "3.7.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.3.tgz#b36840668a16458a7025b9eabfad11b66ab85c69"
