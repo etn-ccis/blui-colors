@@ -1,6 +1,6 @@
 {
   "name": "@pxblue/colors-branding",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Eaton Branding colors for Eaton applications",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -27,6 +27,9 @@
     "url": "https://github.com/pxblue/colors/issues"
   },
   "homepage": "https://github.com/pxblue/colors#readme",
+  "dependencies": {
+    "@pxblue/types": "^1.0.0"
+  },
   "devDependencies": {
     "typescript": "^3.7.3"
   },
