@@ -5,16 +5,30 @@ GRAY='\033[1;30m'
 NC='\033[0m' # No Color
 
 echo "Checking for required files..."
-echo -ne "  UI index: "
+echo -ne "  UI index.js: "
 if [ ! -f ./ui/dist/index.js ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
+echo -ne "  UI index.d.ts "
+if [ ! -f ./ui/dist/index.d.ts ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
+echo -ne "  UI palette.js: "
+if [ ! -f ./ui/dist/palette.js ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
+echo -ne "  UI palette.d.ts "
+if [ ! -f ./ui/dist/palette.d.ts ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
 echo -ne "  UI package.json: "
 if [ ! -f ./ui/package.json ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
 echo -ne "  UI readme: "
 if [ ! -f ./ui/readme.md ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
 echo -ne "  UI license: "
 if [ ! -f ./ui/LICENSE ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
-echo -ne "  Branding index: "
+
+
+echo -ne "  Branding index.js: "
 if [ ! -f ./branding/dist/index.js ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
+echo -ne "  Branding index.d.ts "
+if [ ! -f ./branding/dist/index.d.ts ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
+echo -ne "  UI palette.js: "
+if [ ! -f ./branding/dist/palette.js ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
+echo -ne "  UI palette.d.ts "
+if [ ! -f ./branding/dist/palette.d.ts ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
 echo -ne "  Branding package.json: "
 if [ ! -f ./branding/package.json ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
 echo -ne "  Branding readme: "

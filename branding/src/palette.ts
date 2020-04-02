@@ -5,8 +5,9 @@ All rights reserved.
  
 This code is licensed under the BSD-3 license found in the LICENSE file in the root directory of this source tree and at https://opensource.org/licenses/BSD-3-Clause.
 **/
+import { PXBlueColor } from '@pxblue/types';
 
-export const blue = {
+export const blue : PXBlueColor = {
     50: '#e0ecf5',
     100: '#b3cfe6',
     200: '#80afd5',
@@ -18,7 +19,8 @@ export const blue = {
     800: '#004291',
     900: '#003180'
 }
-export const teal  = {
+
+export const teal : PXBlueColor = {
     50: '#e0f6f5',
     100: '#b3e8e5',
     200: '#80d9d4',
@@ -30,7 +32,7 @@ export const teal  = {
     800: '#00998f',
     900: '#008a7e'
 };
-export const citron = { 
+export const citron : PXBlueColor = { 
     50: '#f7f9e6',
     100: '#ebefc0',
     200: '#dee496',
@@ -42,7 +44,7 @@ export const citron = {
     800: '#a5b51c',
     900: '#97a911'
 };
-export const pine = { 
+export const pine : PXBlueColor = { 
     50: '#e6edea',
     100: '#c0d1cb',
     200: '#97b3a8',
@@ -54,7 +56,7 @@ export const pine = {
     800: '#1d4a37',
     900: '#123927' 
 };
-export const emerald = { 
+export const emerald : PXBlueColor = { 
     50: '#e8f1e7',
     100: '#c6dcc2',
     200: '#a0c59a',
@@ -66,7 +68,7 @@ export const emerald = {
     800: '#2a6e22',
     900: '#1c5b16'
 };
-export const wine = { 
+export const wine : PXBlueColor = { 
     50: '#f3e2e7',
     100: '#e1b7c2',
     200: '#ce8799',
@@ -78,7 +80,7 @@ export const wine = {
     800: '#800820',
     900: '#6e0414'
 };
-export const crimson = { 
+export const crimson : PXBlueColor = { 
     50: '#fbe6e5',
     100: '#f4c2b3',
     200: '#ed9993',
@@ -90,7 +92,7 @@ export const crimson = {
     800: '#cb1f17',
     900: '#c2130e'
 };
-export const sunset = { 
+export const sunset : PXBlueColor = { 
     50: '#fdf2e6',
     100: '#f9ddbf',
     200: '#f5c795',
@@ -102,7 +104,7 @@ export const sunset = {
     800: '#e2721a',
     900: '#dd6010' 
 };
-export const rust = { 
+export const rust : PXBlueColor = { 
     50: '#f8ede5',
     100: '#f0d5bd',
     200: '#e8b892',
@@ -114,7 +116,7 @@ export const rust = {
     800: '#c05516',
     900: '#b5430f'
 };
-export const navy = { 
+export const navy : PXBlueColor = { 
     50: '#e0e9ee',
     100: '#b3c8d5',
     200: '#80a3b9',
@@ -126,7 +128,7 @@ export const navy = {
     800: '#002f55',
     900: '#002042'
 };
-export const sky = { 
+export const sky : PXBlueColor = { 
     50: '#f1f8fa',
     100: '#dbeef2',
     200: '#c3e3ea',
@@ -138,7 +140,7 @@ export const sky = {
     800: '#6ab1c3',
     900: '#57a4b9'
 };
-export const sage = {
+export const sage : PXBlueColor = {
     50: '#f7faf3',
     100: '#ecf2e2',
     200: '#e0eacf',
@@ -150,7 +152,7 @@ export const sage = {
     800: '#aac383',
     900: '#9cb972'
 };
-export const toad = {
+export const toad : PXBlueColor = {
     50: '#f4f0e3',
     100: '#e3d8ba',
     200: '#d1bf8c',
@@ -162,7 +164,7 @@ export const toad = {
     800: '#88610e',
     900: '#774e08'
 };
-export const butter = {
+export const butter : PXBlueColor = {
     50: '#fffcf2',
     100: '#fff8df',
     200: '#fff3c9',
@@ -174,7 +176,7 @@ export const butter = {
     800: '#fedd76',
     900: '#fdd764'
 };
-export const goldenrod = {
+export const goldenrod : PXBlueColor = {
     50: '#fef7e7',
     100: '#fcecc2',
     200: '#fadf99',
@@ -186,7 +188,7 @@ export const goldenrod = {
     800: '#f0a920',
     900: '#ee9b14'
 };
-export const trophy = {
+export const trophy : PXBlueColor = {
     50: '#fdf6e7',
     100: '#fbe8c2',
     200: '#f9d999',

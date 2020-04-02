@@ -6,12 +6,12 @@ The repository has the following directory structure:
 
 ```
 |── /ui                 // standard PX Blue colors (for UIs)
-|   |── index.js                            
-|   |── palette.js      // color definitions (JS)
+|   |── index.ts                            
+|   |── palette.ts      // color definitions (TS)
 |   └── palette.scss    // color definitions (SCSS)
 └── /branding           // branding colors (for charting, etc.)
-    |── index.js                            
-    |── palette.js      // color definitions (JS)
+    |── index.ts                            
+    |── palette.ts      // color definitions (TS)
     └── palette.scss    // color definitions (SCSS)
 ```
 
@@ -35,7 +35,7 @@ yarn add @pxblue/colors-branding
 ## Usage
 Incorporating these colors into your project is handled differently depending on the framework that you are using.
 
-### Angular or NativeScript
+### Angular or Ionic
 ```
 // in styles.scss or your top-level sass file
 @import '~@pxblue/colors/palette.scss'
