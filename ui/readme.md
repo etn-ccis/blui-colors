@@ -1,39 +1,48 @@
 # PX Blue Colors
 
-This package contains PX Blue UI color definitions. These are intended for use as primary UI colors. 
+This package contains PX Blue UI color definitions. These are intended for use as primary UI colors.
 
 It contains the following color defintions:
+
 ```
 blue / $pxb-blue
-lightBlue / $pxb-lightBlue
-green / $pxb-green
+black / $pxb-black
+gray / $pxb-gray
+white / $pxb-white
+darkBlack / $pxb-darkBlack
 red / $pxb-red
 orange / $pxb-orange
 gold / $pxb-gold
-purple / $pxb-purple
-black / $pxb-black
-gray / $pxb-gray
 yellow / $pxb-yellow
-white / $pxb-white
+green / $pxb-green
+lightBlue / $pxb-lightBlue
+purple / $pxb-purple
 ```
 
 These all have color definitions for the following values: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, A100, A200, A400, A700.
-> NOTE: the white palette does not have accent colors defined.
+
+> NOTE: the white and darkBlack palettes do not have accent colors defined.
 
 ## Installation
+
 Install with npm
+
 ```
 npm install --save @pxblue/colors
 ```
+
 or yarn
+
 ```
 yarn add @pxblue/colors
 ```
 
 ## Usage
+
 Incorporating these colors into your project is handled differently depending on the framework that you are using.
 
 ### Angular or Ionic
+
 ```
 // in styles.scss or your top-level sass file
 @import '~@pxblue/colors/palette.scss'
@@ -42,6 +51,7 @@ background-color: map-get($pxb-blue, 500)
 ```
 
 ### React or React Native
+
 ```
 import * as Colors from '@pxblue/colors';
 ...
