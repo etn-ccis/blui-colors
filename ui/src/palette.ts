@@ -20,46 +20,6 @@ export const blue: PXBlueColor = {
     700: '#0068b3',
     800: '#005eab',
     900: '#004b9e',
-    A100: '#4da3d4',
-    A200: '#007bc1',
-    A400: '#0068b3',
-    A700: '#004b9e',
-    contrastDefaultColor: 'light',
-};
-
-export const black: PXBlueColor = {
-    50: '#e8eaea',
-    100: '#c6cacc',
-    200: '#a1a7aa',
-    300: '#7b8387',
-    400: '#5e696e',
-    500: '#424e54',
-    600: '#3c474d',
-    700: '#333d43',
-    800: '#2b353a',
-    900: '#1d2529',
-    A100: '#101417',
-    A200: '#181f22',
-    A400: '#0b0e10',
-    A700: '#000000',
-    contrastDefaultColor: 'light',
-};
-
-export const gray: PXBlueColor = {
-    50: '#eef0f0',
-    100: '#d5d8da',
-    200: '#b9bfc2',
-    300: '#9ca5a9',
-    400: '#879196',
-    500: '#727e84',
-    600: '#6a767c',
-    700: '#5f6b71',
-    800: '#556167',
-    900: '#424e54',
-    A100: '#f0f5fd',
-    A200: '#c2dafe',
-    A400: '#268fca',
-    A700: '#007bc1',
     contrastDefaultColor: 'light',
 };
 
@@ -77,22 +37,35 @@ export const white: PXBlueColor = {
     contrastDefaultColor: 'dark',
 };
 
-// TBD
-export const oledBlack: PXBlueColor = {
-    50: '#202224',
-    100: '#202224',
-    200: '#182022',
-    300: '#182022',
-    400: '#13181b',
-    500: '#13181b',
-    600: '#0b0e0f',
-    700: '#0b0e0f',
-    800: '#000000',
-    900: '#000000',
+export const gray: PXBlueColor = {
+    50: '#eef0f0',
+    100: '#d5d8da',
+    200: '#b9bfc2',
+    300: '#9ca5a9',
+    400: '#879196',
+    500: '#727e84',
+    600: '#6a767c',
+    700: '#5f6b71',
+    800: '#556167',
+    900: '#424e54',
     contrastDefaultColor: 'light',
 };
 
-export const darkBlack: PXBlueColor = {
+export const black: PXBlueColor = {
+    50: '#e8eaea',
+    100: '#c6cacc',
+    200: '#a1a7aa',
+    300: '#7b8387',
+    400: '#5e696e',
+    500: '#424e54',
+    600: '#3c474d',
+    700: '#333d43',
+    800: '#2b353a',
+    900: '#1d2529',
+    contrastDefaultColor: 'light',
+};
+
+export const vantaBlack: PXBlueColor = {
     50: '#202224', // oledBlack[50]
     100: '#182022', // oledBlack[200], black[A200]
     200: '#182022', // oledBlack[200], black[A200]
@@ -119,10 +92,6 @@ export const red: PXBlueColor = {
     700: '#bd2e2f',
     800: '#b72727',
     900: '#ab1a1a',
-    A100: '#da7777',
-    A200: '#ca3c3d',
-    A400: '#bd2e2f',
-    A700: '#ab1a1a',
     contrastDefaultColor: 'light',
 };
 
@@ -137,10 +106,6 @@ export const orange: PXBlueColor = {
     700: '#f16418',
     800: '#ef5a14',
     900: '#ec470b',
-    A100: '#ffefed',
-    A200: '#ffd8d1',
-    A400: '#ffc0b6',
-    A700: '#ffa99a',
     contrastDefaultColor: 'light',
 };
 
@@ -155,10 +120,6 @@ export const gold: PXBlueColor = {
     700: '#ec9917',
     800: '#e99012',
     900: '#e57f0a',
-    A100: '#fdf4ec',
-    A200: '#fee3ca',
-    A400: '#fed3a8',
-    A700: '#ffc68f',
     contrastDefaultColor: 'dark',
 };
 
@@ -173,10 +134,6 @@ export const yellow: PXBlueColor = {
     700: '#ecbe23',
     800: '#e9b81d',
     900: '#e5ac12',
-    A100: '#fffd00',
-    A200: '#ffeb26',
-    A400: '#ffd94c',
-    A700: '#ffcb69',
     contrastDefaultColor: 'dark',
 };
 
@@ -191,10 +148,6 @@ export const green: PXBlueColor = {
     700: '#2ca618',
     800: '#249e13',
     900: '#178e0b',
-    A100: '#e8fff1',
-    A200: '#9bffc4',
-    A400: '#4dff96',
-    A700: '#00ff69',
     contrastDefaultColor: 'light',
 };
 
@@ -209,10 +162,6 @@ export const lightBlue: PXBlueColor = {
     700: '#0075ee',
     800: '#006bec',
     900: '#0058e8',
-    A100: '#4dacf6',
-    A200: '#0088f2',
-    A400: '#0075ee',
-    A700: '#0058e8',
     contrastDefaultColor: 'dark',
 };
 
@@ -227,9 +176,5 @@ export const purple: PXBlueColor = {
     700: '#8531eb',
     800: '#7b29e8',
     900: '#6a1be4',
-    A100: '#f0ecfe',
-    A200: '#d2c5fc',
-    A400: '#c3b2fb',
-    A700: '#ac95f9',
     contrastDefaultColor: 'light',
 };

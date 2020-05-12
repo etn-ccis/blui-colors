@@ -1,8 +1,12 @@
 # UI Colors Changelog
 
-### 2.1.0
+### 3.0.0
 
-Added new color definition for darkBlack color palette for dark themes.
+Added new color definition for vantaBlack color palette for dark themes.
+
+** Breaking change: **
+
+-   Removed the oledBlack and all the accent colors.
 
 ### 2.0.0
 
