@@ -6,10 +6,10 @@ It contains the following color defintions:
 
 ```
 blue / $pxb-blue
-black / $pxb-black
-gray / $pxb-gray
 white / $pxb-white
-darkBlack / $pxb-darkBlack
+gray / $pxb-gray
+black / $pxb-black
+vantaBlack / $pxb-vantaBlack
 red / $pxb-red
 orange / $pxb-orange
 gold / $pxb-gold

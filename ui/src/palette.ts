@@ -66,18 +66,21 @@ export const black: PXBlueColor = {
 };
 
 export const vantaBlack: PXBlueColor = {
-    50: '#202224', // oledBlack[50]
-    100: '#182022', // oledBlack[200], black[A200]
-    200: '#182022', // oledBlack[200], black[A200]
-    300: '#13181b', // oledBlack[400]
-    400: '#101417', // black[A100]
-    500: '#0b0e10', // black[A400], oledBlack[600]
-    600: '#0b0e10', // black[A400], oledBlack[600]
+    50: '#202224',
+    100: '#182022',
+    200: '#182022',
+    300: '#13181b',
+    400: '#101417',
+    500: '#0b0e10',
+    600: '#0b0e10',
     700: '#08090a',
     800: '#08090a',
-    900: '#000000', // oledBlack[800], black[A700]
+    900: '#000000',
     contrastDefaultColor: 'light',
 };
+
+// alias
+export const darkBlack: PXBlueColor = vantaBlack;
 
 /* Status Colors */
 
