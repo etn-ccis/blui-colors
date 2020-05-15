@@ -9,7 +9,7 @@ blue / $pxb-blue
 white / $pxb-white
 gray / $pxb-gray
 black / $pxb-black
-vantaBlack / $pxb-vantaBlack
+darkBlack (vantaBlack) / $pxb-darkBlack ($pxb-vantaBlack)
 red / $pxb-red
 orange / $pxb-orange
 gold / $pxb-gold
@@ -19,9 +19,7 @@ lightBlue / $pxb-lightBlue
 purple / $pxb-purple
 ```
 
-These all have color definitions for the following values: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900, A100, A200, A400, A700.
-
-> NOTE: the white and darkBlack palettes do not have accent colors defined.
+These all have color definitions for the following values: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900.
 
 ## Installation
 
