@@ -65,7 +65,7 @@ export const black: PXBlueColor = {
     contrastDefaultColor: 'light',
 };
 
-export const vantaBlack: PXBlueColor = {
+export const darkBlack: PXBlueColor = {
     50: '#202224',
     100: '#182022',
     200: '#182022',
@@ -80,7 +80,7 @@ export const vantaBlack: PXBlueColor = {
 };
 
 // alias
-export const darkBlack: PXBlueColor = vantaBlack;
+export const vantaBlack: PXBlueColor = darkBlack;
 
 /* Status Colors */
 

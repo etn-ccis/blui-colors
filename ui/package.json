@@ -28,7 +28,7 @@
     },
     "homepage": "https://github.com/pxblue/colors#readme",
     "dependencies": {
-        "@pxblue/types": "^1.0.0"
+        "@pxblue/types": "^2.0.0"
     },
     "devDependencies": {
         "typescript": "^3.7.3"
