@@ -9,7 +9,7 @@ blue / $pxb-blue
 white / $pxb-white
 gray / $pxb-gray
 black / $pxb-black
-darkBlack (vantaBlack) / $pxb-darkBlack ($pxb-vantaBlack)
+darkBlack / $pxb-darkBlack
 red / $pxb-red
 orange / $pxb-orange
 gold / $pxb-gold
