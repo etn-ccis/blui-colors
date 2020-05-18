@@ -1,44 +1,44 @@
 {
-  "name": "@pxblue/colors",
-  "version": "2.0.1",
-  "description": "PX Blue colors for Eaton applications",
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "yarn && tsc"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pxblue/colors.git"
-  },
-  "keywords": [
-    "PXBlue",
-    "colors",
-    "Eaton",
-    "Power",
-    "Xpert",
-    "quality",
-    "lighting"
-  ],
-  "author": "px-blue <pxblue@eaton.com>",
-  "license": "BSD-3-Clause",
-  "bugs": {
-    "url": "https://github.com/pxblue/colors/issues"
-  },
-  "homepage": "https://github.com/pxblue/colors#readme",
-  "dependencies": {
-    "@pxblue/types": "^1.0.0"
-  },
-  "devDependencies": {
-    "typescript": "^3.7.3"
-  },
-  "files": [
-    "package.json",
-    "readme.md",
-    "LICENSE",
-    "changelog.md",
-    "dist/",
-    "palette.scss"
-  ]
+    "name": "@pxblue/colors",
+    "version": "3.0.0",
+    "description": "PX Blue colors for Eaton applications",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "yarn && tsc"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pxblue/colors.git"
+    },
+    "keywords": [
+        "PXBlue",
+        "colors",
+        "Eaton",
+        "Power",
+        "Xpert",
+        "quality",
+        "lighting"
+    ],
+    "author": "px-blue <pxblue@eaton.com>",
+    "license": "BSD-3-Clause",
+    "bugs": {
+        "url": "https://github.com/pxblue/colors/issues"
+    },
+    "homepage": "https://github.com/pxblue/colors#readme",
+    "dependencies": {
+        "@pxblue/types": "^2.0.0"
+    },
+    "devDependencies": {
+        "typescript": "^3.7.3"
+    },
+    "files": [
+        "package.json",
+        "readme.md",
+        "LICENSE",
+        "changelog.md",
+        "dist/",
+        "palette.scss"
+    ]
 }
