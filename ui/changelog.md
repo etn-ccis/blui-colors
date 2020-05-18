@@ -6,7 +6,8 @@ Added new color definition for darkBlack color palette for dark themes.
 
 ** Breaking change: **
 
--   Removed the oledBlack and all the accent colors.
+-   Replaced oledBlack palette with darkBlack.
+-   Accent colors have been removed.
 
 ### 2.0.0
 
