@@ -58,7 +58,7 @@ workflows:
   version: 2
   colors:
     jobs:
-      - build:
+      - build
       - publish:
           requires:
             - build
