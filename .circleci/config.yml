@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker: 
-      - image: circleci/node:8.11-browsers
+      - image: circleci/node:12.9.1-browsers
     steps:
       - checkout
       - run: 
@@ -14,3 +14,55 @@ jobs:
       - run:
           name: Verify Artifacts
           command: yarn test
+      - persist_to_workspace:
+          root: .
+          paths:
+            - branding/dist
+            - ui/dist
+  publish:
+    docker:
+      - image: circleci/node:12.9.1-browsers
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run:
+          name: Authenticate with registry
+          command: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
+      - run:
+          name: Publish @pxblue/colors
+          command:  |
+            cd ui
+            MASTER_VERSION=`node -p "require('./package.json').version"`
+            NPM_LATEST_VERSION=`npm show @pxblue/colors version`
+            if ! [ $MASTER_VERSION == $NPM_LATEST_VERSION ];
+            then
+                npm publish
+            else
+                echo "Latest version is already published."
+            fi
+      - run:
+          name: Publish @pxblue/colors-branding
+          command:  |
+            cd branding
+            MASTER_VERSION=`node -p "require('./package.json').version"`
+            NPM_LATEST_VERSION=`npm show @pxblue/colors-branding version`
+            if ! [ $MASTER_VERSION == $NPM_LATEST_VERSION ];
+            then
+                npm publish
+            else
+                echo "Latest version is already published."
+            fi
+
+workflows:
+  version: 2
+  colors:
+    jobs:
+      - build
+      - publish:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - master
