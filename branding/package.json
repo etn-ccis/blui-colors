@@ -35,9 +35,9 @@
   },
   "files": [
       "package.json",
-      "readme.md",
+    "README.md",
       "LICENSE",
-      "changelog.md",
+      "CHANGELOG.md",
       "dist/",
       "palette.scss"
   ]
