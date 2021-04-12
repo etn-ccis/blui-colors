@@ -10,7 +10,7 @@ import * as Colors from './palette';
 
 export * from './palette';
 
-export const chartColors = [ 
+export const chartColors = [
     Colors.teal[500],
     Colors.citron[500],
     Colors.pine[500],
@@ -20,5 +20,5 @@ export const chartColors = [
     Colors.sunset[500],
     Colors.rust[500],
     Colors.navy[500],
-    Colors.sky[500]
+    Colors.sky[500],
 ];

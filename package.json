@@ -1,37 +1,41 @@
 {
-  "name": "pxbluecolors",
-  "version": "3.0.0",
-  "description": "PX Blue colors for Eaton applications",
-  "main": "index.ts",
-  "scripts": {
-    "test": "./buildTest.sh",
-    "build:colors": "cd ui && yarn build && cd ..",
-    "build:colors-branding": "cd branding && yarn build && cd ..",
-    "build:all": "yarn build:colors && yarn build:colors-branding",
-    "publish:colors": "yarn build:colors && cd ui && npm version patch && npm publish && cd .. && exit 0",
-    "publish:colors-branding": "yarn build:colors-branding && cd branding && npm version patch && npm publish && cd .. && exit 0",
-    "publish:all": "yarn publish:colors && yarn publish:colors-branding && exit 0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pxblue/colors.git"
-  },
-  "keywords": [
-    "PXBlue",
-    "colors",
-    "Eaton",
-    "Power",
-    "Xpert",
-    "quality",
-    "lighting"
-  ],
-  "author": "px-blue <pxblue@eaton.com>",
-  "license": "BSD-3-Clause",
-  "bugs": {
-    "url": "https://github.com/pxblue/colors/issues"
-  },
-  "homepage": "https://github.com/pxblue/colors#readme",
-  "devDependencies": {
-    "typescript": "^3.7.2"
-  }
+    "name": "pxbluecolors",
+    "version": "3.0.0",
+    "description": "PX Blue colors for Eaton applications",
+    "main": "index.ts",
+    "scripts": {
+        "test": "./buildTest.sh",
+        "build:colors": "cd ui && yarn build && cd ..",
+        "build:colors-branding": "cd branding && yarn build && cd ..",
+        "build:all": "yarn build:colors && yarn build:colors-branding",
+        "publish:colors": "yarn build:colors && cd ui && npm version patch && npm publish && cd .. && exit 0",
+        "publish:colors-branding": "yarn build:colors-branding && cd branding && npm version patch && npm publish && cd .. && exit 0",
+        "publish:all": "yarn publish:colors && yarn publish:colors-branding && exit 0",
+        "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pxblue/colors.git"
+    },
+    "keywords": [
+        "PXBlue",
+        "colors",
+        "Eaton",
+        "Power",
+        "Xpert",
+        "quality",
+        "lighting"
+    ],
+    "author": "px-blue <pxblue@eaton.com>",
+    "license": "BSD-3-Clause",
+    "bugs": {
+        "url": "https://github.com/pxblue/colors/issues"
+    },
+    "homepage": "https://github.com/pxblue/colors#readme",
+    "prettier": "@pxblue/prettier-config",
+    "devDependencies": {
+        "@pxblue/prettier-config": "^1.0.2",
+        "prettier": "^2.2.1",
+        "typescript": "^3.7.2"
+    }
 }
