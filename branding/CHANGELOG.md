@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v3.0.1 (April 1, 2020)
+
+### Added
+
+-   Added typings to color definitions.
+
+### Changed
+
+-   Library converted to TypeScript to provide strong typings for TS projects.
+
 ## v2.0.2 (May 9, 2019)
 
 ### Added
