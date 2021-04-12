@@ -4,17 +4,17 @@
 
 ### Added
 
-- Added new color definition for darkBlack color palette for dark themes.
+-   Added new color definition for darkBlack color palette for dark themes.
 
 ### Changed
 
 ** Breaking change: **
 
-- Replaced oledBlack palette with darkBlack.
-- Accent colors have been removed.
+-   Replaced oledBlack palette with darkBlack.
+-   Accent colors have been removed.
 
 ## v2.0.0 (December 19, 2019)
 
 ###Changed
 
-- Converted package to Typescript to include type definitions. The package will still be usable in regular JS applications as well.
+-   Converted package to Typescript to include type definitions. The package will still be usable in regular JS applications as well.
