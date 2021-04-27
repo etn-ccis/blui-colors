@@ -33,10 +33,10 @@ jobs:
             echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run:
           name: Publish @pxblue/colors
-          command: cd ui && yarn publish:package
+          command: cd ui && yarn publish:package -b $CIRCLE_BRANCH
       - run:
           name: Publish @pxblue/colors-branding
-          command: cd branding && yarn publish:package
+          command: cd branding && yarn publish:package -b $CIRCLE_BRANCH
 
 workflows:
   version: 2
