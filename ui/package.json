@@ -1,12 +1,13 @@
 {
     "name": "@pxblue/colors",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "description": "PX Blue colors for Eaton applications",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "yarn && tsc"
+        "build": "yarn && tsc",
+        "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish"
     },
     "repository": {
         "type": "git",
