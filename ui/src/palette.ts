@@ -25,7 +25,7 @@ export const blue: PXBlueColor = {
 
 export const white: PXBlueColor = {
     50: '#ffffff',
-    100: '#fdfdfd',
+    100: '#fbfbfb',
     200: '#f7f8f8',
     300: '#f3f5f5',
     400: '#f1f2f2',

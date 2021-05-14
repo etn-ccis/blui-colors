@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v3.0.1 (May 14, 2021)
+
+### Changed
+
+-   Changed `white[100]` from `#fdfdfd` to `#fbfbfb`.
+
 ## v3.0.0 (May 18, 2020)
 
 ### Added
