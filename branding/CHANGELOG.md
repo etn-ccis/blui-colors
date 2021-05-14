@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v3.1.0 (May 14, 2021)
+
+### Added
+
+-   Added contrast palette to brand colors.
+
 ## v3.0.1 (April 1, 2020)
 
 ### Added
