@@ -1,22 +1,22 @@
-# PX Blue Colors
+# Brightlayer UI Colors
 
-This package contains PX Blue UI color definitions. These are intended for use as primary UI colors.
+This package contains Brightlayer UI color definitions. These are intended for use as primary UI colors.
 
 It contains the following color defintions:
 
 ```
-blue / $pxb-blue
-white / $pxb-white
-gray / $pxb-gray
-black / $pxb-black
-darkBlack / $pxb-darkBlack
-red / $pxb-red
-orange / $pxb-orange
-gold / $pxb-gold
-yellow / $pxb-yellow
-green / $pxb-green
-lightBlue / $pxb-lightBlue
-purple / $pxb-purple
+blue / $blui-blue
+white / $blui-white
+gray / $blui-gray
+black / $blui-black
+darkBlack / $blui-darkBlack
+red / $blui-red
+orange / $blui-orange
+gold / $blui-gold
+yellow / $blui-yellow
+green / $blui-green
+lightBlue / $blui-lightBlue
+purple / $blui-purple
 ```
 
 These all have color definitions for the following values: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900.
@@ -26,13 +26,13 @@ These all have color definitions for the following values: 50, 100, 200, 300, 40
 Install with npm
 
 ```
-npm install --save @pxblue/colors
+npm install --save @brightlayer-ui/colors
 ```
 
 or yarn
 
 ```
-yarn add @pxblue/colors
+yarn add @brightlayer-ui/colors
 ```
 
 ## Usage
@@ -43,15 +43,15 @@ Incorporating these colors into your project is handled differently depending on
 
 ```
 // in styles.scss or your top-level sass file
-@import '~@pxblue/colors/palette.scss'
+@import '~@brightlayer-ui/colors/palette.scss'
 ...
-background-color: map-get($pxb-blue, 500)
+background-color: map-get($blui-blue, 500)
 ```
 
 ### React or React Native
 
 ```
-import * as Colors from '@pxblue/colors';
+import * as Colors from '@brightlayer-ui/colors';
 ...
 <div style={{background: Colors.blue['500']}}/>
 ```

@@ -1,5 +1,5 @@
 {
-    "name": "@pxblue/colors-branding",
+    "name": "@brightlayer-ui/colors-branding",
     "version": "3.1.0",
     "description": "Eaton Branding colors for Eaton applications",
     "main": "./dist/index.js",
@@ -7,15 +7,15 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "yarn && tsc",
-        "publish:package": "set npm_config_yes=true && npx -p @pxblue/publish pxb-publish",
-        "tag:package": "npx -p @pxblue/tag pxb-tag"
+        "publish:package": "set npm_config_yes=true && npx -p @brightlayer-ui/publish blui-publish",
+        "tag:package": "npx -p @brightlayer-ui/tag blui-tag"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/pxblue/colors.git"
+        "url": "git+https://github.com/brightlayer-ui/colors.git"
     },
     "keywords": [
-        "PXBlue",
+        "Brightlayer-UI",
         "colors",
         "Eaton",
         "Power",
@@ -23,14 +23,14 @@
         "quality",
         "lighting"
     ],
-    "author": "px-blue <pxblue@eaton.com>",
+    "author": "brightlayer-ui <brightlayer-ui@eaton.com>",
     "license": "BSD-3-Clause",
     "bugs": {
-        "url": "https://github.com/pxblue/colors/issues"
+        "url": "https://github.com/brightlayer-ui/colors/issues"
     },
-    "homepage": "https://github.com/pxblue/colors#readme",
+    "homepage": "https://github.com/brightlayer-ui/colors#readme",
     "dependencies": {
-        "@pxblue/types": "^1.0.0"
+        "@brightlayer-ui/types": "^1.0.0"
     },
     "devDependencies": {
         "typescript": "^3.7.3"
