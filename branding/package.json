@@ -23,7 +23,7 @@
         "quality",
         "lighting"
     ],
-    "author": "brightlayer-ui <brightlayer-ui@eaton.com>",
+    "author": "Brightlayer UI <brightlayer-ui@eaton.com>",
     "license": "BSD-3-Clause",
     "bugs": {
         "url": "https://github.com/brightlayer-ui/colors/issues"

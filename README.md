@@ -73,7 +73,7 @@ cd colors
 
 ## Publishing
 
-To publish any of these packages to npm, you must be authenticated to npm in your terminal as brightlayer-ui. Type the following to see if you are authenticated:
+To publish any of these packages to npm, you must be authenticated to npm in your terminal as brightlayerui. Type the following to see if you are authenticated:
 
 ```
 npm whoami
@@ -82,7 +82,7 @@ npm whoami
 If you are not, you will need to log in:
 
 ```
-npm adduser brightlayer-ui
+npm adduser brightlayerui
 ```
 
 You'll be prompted to enter the password and then you'll be ready to publish.
