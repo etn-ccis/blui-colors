@@ -1,7 +1,7 @@
 {
-    "name": "pxbluecolors",
+    "name": "brightlayer-ui-colors",
     "version": "0.0.0",
-    "description": "PX Blue colors for Eaton applications",
+    "description": "Brightlayer UI colors for Eaton applications",
     "main": "index.ts",
     "scripts": {
         "test": "./buildTest.sh",
@@ -12,10 +12,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/pxblue/colors.git"
+        "url": "git+https://github.com/brightlayer-ui/colors.git"
     },
     "keywords": [
-        "PXBlue",
+        "Brightlayer UI",
         "colors",
         "Eaton",
         "Power",
@@ -23,15 +23,15 @@
         "quality",
         "lighting"
     ],
-    "author": "px-blue <pxblue@eaton.com>",
+    "author": "brightlayer-ui <brightlayer-ui@eaton.com>",
     "license": "BSD-3-Clause",
     "bugs": {
-        "url": "https://github.com/pxblue/colors/issues"
+        "url": "https://github.com/brightlayer-ui/colors/issues"
     },
-    "homepage": "https://github.com/pxblue/colors#readme",
-    "prettier": "@pxblue/prettier-config",
+    "homepage": "https://github.com/brightlayer-ui/colors#readme",
+    "prettier": "@brightlayer-ui/prettier-config",
     "devDependencies": {
-        "@pxblue/prettier-config": "^1.0.2",
+        "@brightlayer-ui/prettier-config": "^1.0.2",
         "prettier": "^2.2.1",
         "typescript": "^3.7.2"
     }

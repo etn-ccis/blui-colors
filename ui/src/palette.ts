@@ -5,11 +5,11 @@ All rights reserved.
  
 This code is licensed under the BSD-3 license found in the LICENSE file in the root directory of this source tree and at https://opensource.org/licenses/BSD-3-Clause.
 **/
-import { PXBlueColor } from '@pxblue/types';
+import { BLUIColor } from '@brightlayer-ui/types';
 
 /* Primary Colors / User Interface Colors */
 
-export const blue: PXBlueColor = {
+export const blue: BLUIColor = {
     50: '#e0eff8',
     100: '#b3d7ec',
     200: '#80bde0',
@@ -23,7 +23,7 @@ export const blue: PXBlueColor = {
     contrastDefaultColor: 'light',
 };
 
-export const white: PXBlueColor = {
+export const white: BLUIColor = {
     50: '#ffffff',
     100: '#fbfbfb',
     200: '#f7f8f8',
@@ -37,7 +37,7 @@ export const white: PXBlueColor = {
     contrastDefaultColor: 'dark',
 };
 
-export const gray: PXBlueColor = {
+export const gray: BLUIColor = {
     50: '#eef0f0',
     100: '#d5d8da',
     200: '#b9bfc2',
@@ -51,7 +51,7 @@ export const gray: PXBlueColor = {
     contrastDefaultColor: 'light',
 };
 
-export const black: PXBlueColor = {
+export const black: BLUIColor = {
     50: '#e8eaea',
     100: '#c6cacc',
     200: '#a1a7aa',
@@ -65,7 +65,7 @@ export const black: PXBlueColor = {
     contrastDefaultColor: 'light',
 };
 
-export const darkBlack: PXBlueColor = {
+export const darkBlack: BLUIColor = {
     50: '#202224',
     100: '#182022',
     200: '#182022',
@@ -80,11 +80,11 @@ export const darkBlack: PXBlueColor = {
 };
 
 // alias
-export const vantaBlack: PXBlueColor = darkBlack;
+export const vantaBlack: BLUIColor = darkBlack;
 
 /* Status Colors */
 
-export const red: PXBlueColor = {
+export const red: BLUIColor = {
     50: '#f9e8e8',
     100: '#efc5c5',
     200: '#e59e9e',
@@ -98,7 +98,7 @@ export const red: PXBlueColor = {
     contrastDefaultColor: 'light',
 };
 
-export const orange: PXBlueColor = {
+export const orange: BLUIColor = {
     50: '#feefe4',
     100: '#fcd6bc',
     200: '#fabb90',
@@ -112,7 +112,7 @@ export const orange: PXBlueColor = {
     contrastDefaultColor: 'light',
 };
 
-export const gold: PXBlueColor = {
+export const gold: BLUIColor = {
     50: '#fdf5e4',
     100: '#fbe6bc',
     200: '#f8d58f',
@@ -126,7 +126,7 @@ export const gold: PXBlueColor = {
     contrastDefaultColor: 'dark',
 };
 
-export const yellow: PXBlueColor = {
+export const yellow: BLUIColor = {
     50: '#fdf9e6',
     100: '#fbefc1',
     200: '#f8e597',
@@ -140,7 +140,7 @@ export const yellow: PXBlueColor = {
     contrastDefaultColor: 'dark',
 };
 
-export const green: PXBlueColor = {
+export const green: BLUIColor = {
     50: '#e7f6e4',
     100: '#c4e9bc',
     200: '#9cdb90',
@@ -154,7 +154,7 @@ export const green: PXBlueColor = {
     contrastDefaultColor: 'light',
 };
 
-export const lightBlue: PXBlueColor = {
+export const lightBlue: BLUIColor = {
     50: '#e0f1fd',
     100: '#b3dbfb',
     200: '#80c4f9',
@@ -168,7 +168,7 @@ export const lightBlue: PXBlueColor = {
     contrastDefaultColor: 'dark',
 };
 
-export const purple: PXBlueColor = {
+export const purple: BLUIColor = {
     50: '#f3e8fd',
     100: '#e0c5fa',
     200: '#cc9ff7',

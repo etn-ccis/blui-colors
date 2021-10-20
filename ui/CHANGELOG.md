@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## v3.0.1 (October 20, 2021)
+
+### Changed
+
+-   Changed package namespace from `@pxblue` to `@brightlayer-ui`.
+
+## Package Migration Notice
+
+Previous versions listed after this indicator refer to our deprecated `@pxblue` packages.
+
+---
+
 ## v3.0.1 (May 14, 2021)
 
 ### Changed
@@ -21,6 +33,6 @@
 
 ## v2.0.0 (December 19, 2019)
 
-###Changed
+### Changed
 
 -   Converted package to Typescript to include type definitions. The package will still be usable in regular JS applications as well.
