@@ -1,5 +1,5 @@
 /**
-Copyright (c) 2018-present, Eaton
+Copyright (c) 2021-present, Eaton
  
 All rights reserved.
  
@@ -8,7 +8,7 @@ This code is licensed under the BSD-3 license found in the LICENSE file in the r
 
 /* Primary Colors / User Interface Colors */
 
-$pxb-blue: (
+$blui-blue: (
     50: #e0eff8,
     100: #b3d7ec,
     200: #80bde0,
@@ -32,7 +32,7 @@ $pxb-blue: (
         900: #ffffff,
     ),
 );
-$pxb-white: (
+$blui-white: (
     50: #ffffff,
     100: #fbfbfb,
     200: #f7f8f8,
@@ -56,7 +56,7 @@ $pxb-white: (
         900: #000000,
     ),
 );
-$pxb-gray: (
+$blui-gray: (
     50: #eef0f0,
     100: #d5d8da,
     200: #b9bfc2,
@@ -80,7 +80,7 @@ $pxb-gray: (
         900: #ffffff,
     ),
 );
-$pxb-black: (
+$blui-black: (
     50: #e8eaea,
     100: #c6cacc,
     200: #a1a7aa,
@@ -104,7 +104,7 @@ $pxb-black: (
         900: #ffffff,
     ),
 );
-$pxb-darkBlack: (
+$blui-darkBlack: (
     50: #202224,
     100: #182022,
     200: #182022,
@@ -130,11 +130,11 @@ $pxb-darkBlack: (
 );
 
 // alias
-$pxb-vantaBlack: $pxb-darkBlack;
+$blui-vantaBlack: $blui-darkBlack;
 
 /* Status Colors */
 
-$pxb-red: (
+$blui-red: (
     50: #f9e8e8,
     100: #efc5c5,
     200: #e59e9e,
@@ -158,7 +158,7 @@ $pxb-red: (
         900: #ffffff,
     ),
 );
-$pxb-orange: (
+$blui-orange: (
     50: #feefe4,
     100: #fcd6bc,
     200: #fabb90,
@@ -182,7 +182,7 @@ $pxb-orange: (
         900: #ffffff,
     ),
 );
-$pxb-gold: (
+$blui-gold: (
     50: #fdf5e4,
     100: #fbe6bc,
     200: #f8d58f,
@@ -206,7 +206,7 @@ $pxb-gold: (
         900: #000000,
     ),
 );
-$pxb-yellow: (
+$blui-yellow: (
     50: #fdf9e6,
     100: #fbefc1,
     200: #f8e597,
@@ -230,7 +230,7 @@ $pxb-yellow: (
         900: #000000,
     ),
 );
-$pxb-green: (
+$blui-green: (
     50: #e7f6e4,
     100: #c4e9bc,
     200: #9cdb90,
@@ -254,7 +254,7 @@ $pxb-green: (
         900: #ffffff,
     ),
 );
-$pxb-lightBlue: (
+$blui-lightBlue: (
     50: #e0f1fd,
     100: #b3dbfb,
     200: #80c4f9,
@@ -278,7 +278,7 @@ $pxb-lightBlue: (
         900: #ffffff,
     ),
 );
-$pxb-purple: (
+$blui-purple: (
     50: #f3e8fd,
     100: #e0c5fa,
     200: #cc9ff7,

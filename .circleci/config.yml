@@ -1,4 +1,6 @@
-version: 2
+version: 2.1
+orbs:
+  gh: circleci/github-cli@1.0.3
 jobs:
   build:
     docker: 
@@ -32,11 +34,25 @@ jobs:
             echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" > ~/.npmrc
             echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run:
-          name: Publish @pxblue/colors
+          name: Publish @brightlayer-ui/colors
           command: cd ui && yarn publish:package -b $CIRCLE_BRANCH
       - run:
-          name: Publish @pxblue/colors-branding
+          name: Publish @brightlayer-ui/colors-branding
           command: cd branding && yarn publish:package -b $CIRCLE_BRANCH
+  tag:
+    docker:
+      - image: circleci/node:12.9.1-browsers
+    steps:
+      - checkout
+      - gh/setup
+      - run:
+          name: Tag @brightlayer-ui/colors
+          command: |
+            cd ui && yarn tag:package -b $CIRCLE_BRANCH -s -colors
+      - run:
+          name: Tag @brightlayer-ui/colors-branding
+          command: |
+            cd branding && yarn tag:package -b $CIRCLE_BRANCH -s -colors-branding
 
 workflows:
   version: 2
@@ -51,3 +67,10 @@ workflows:
               only:
                 - master
                 - dev
+      - tag:
+          requires:
+            - publish
+          filters:
+            branches:
+              only:
+                - master

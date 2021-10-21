@@ -28,13 +28,13 @@ $brand-trophy
 Install with npm
 
 ```
-npm install --save @pxblue/colors-branding
+npm install --save @brightlayer-ui/colors-branding
 ```
 
 or yarn
 
 ```
-yarn add @pxblue/colors-branding
+yarn add @brightlayer-ui/colors-branding
 ```
 
 ## Usage
@@ -45,7 +45,7 @@ Incorporating these colors into your project is handled differently depending on
 
 ```
 // in styles.scss or your top-level sass file
-@import '~@pxblue/colors-branding/palette.scss'
+@import '~@brightlayer-ui/colors-branding/palette.scss'
 ...
 background-color: map-get($brand-rust, 500)
 ```
@@ -53,7 +53,7 @@ background-color: map-get($brand-rust, 500)
 ### React or React Native
 
 ```
-import * as Colors from '@pxblue/colors-branding';
+import * as Colors from '@brightlayer-ui/colors-branding';
 ...
 <div style={{background: Colors.rust['500']}}/>
 ```
