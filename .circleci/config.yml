@@ -48,11 +48,11 @@ jobs:
       - run:
           name: Tag @brightlayer-ui/colors
           command: |
-            cd ui && yarn tag:package -b $CIRCLE_BRANCH -s -colors
+            cd ui && yarn tag:package -b $CIRCLE_BRANCH -s -blui-colors
       - run:
           name: Tag @brightlayer-ui/colors-branding
           command: |
-            cd branding && yarn tag:package -b $CIRCLE_BRANCH -s -colors-branding
+            cd branding && yarn tag:package -b $CIRCLE_BRANCH -s -blui-colors-branding
 
 workflows:
   version: 2
