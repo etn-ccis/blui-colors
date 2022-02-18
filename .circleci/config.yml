@@ -4,7 +4,7 @@ orbs:
 jobs:
   build:
     docker: 
-      - image: circleci/node:12.9.1-browsers
+      - image: cimg/node:14.19.0-browsers
     steps:
       - checkout
       - run: 
@@ -23,7 +23,7 @@ jobs:
             - ui/dist
   publish:
     docker:
-      - image: circleci/node:12.9.1-browsers
+      - image: cimg/node:14.19.0-browsers
     steps:
       - checkout
       - attach_workspace:
@@ -41,7 +41,7 @@ jobs:
           command: cd branding && yarn publish:package -b $CIRCLE_BRANCH
   tag:
     docker:
-      - image: circleci/node:12.9.1-browsers
+      - image: cimg/node:14.19.0-browsers
     steps:
       - checkout
       - gh/setup
