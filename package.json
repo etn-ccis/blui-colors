@@ -9,7 +9,7 @@
         "build:colors-branding": "cd branding && yarn build && cd ..",
         "build:all": "yarn build:colors && yarn build:colors-branding",
         "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
-        "generate:licenses": "npm-license-crawler -onlyDirectDependencies -json LICENSES.json"
+        "generate:licenses": "cd ./ui && npm-license-crawler -onlyDirectDependencies -json LICENSES.json && cd .. & cd ./branding && npm-license-crawler -onlyDirectDependencies -json LICENSES.json"
     },
     "repository": {
         "type": "git",
