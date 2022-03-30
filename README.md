@@ -45,13 +45,13 @@ yarn add @brightlayer-ui/colors-branding
 
 Incorporating these colors into your project is handled differently depending on the framework that you are using.
 
-### Angular or Ionic
+### Angular
 
 ```
 // in styles.scss or your top-level sass file
-@import '~@brightlayer-ui/colors/palette.scss'
+@use '~@brightlayer-ui/colors/palette.scss';
 ...
-background-color: map-get($blui-blue, 500)
+background-color: map-get(palette.$blui-blue, 500)
 ```
 
 ### React or React Native
