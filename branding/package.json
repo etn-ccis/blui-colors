@@ -39,6 +39,7 @@
         "package.json",
         "README.md",
         "LICENSE",
+        "LICENSES.json",
         "CHANGELOG.md",
         "dist/",
         "palette.scss"

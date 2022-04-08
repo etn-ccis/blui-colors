@@ -8,7 +8,9 @@
         "build:colors": "cd ui && yarn build && cd ..",
         "build:colors-branding": "cd branding && yarn build && cd ..",
         "build:all": "yarn build:colors && yarn build:colors-branding",
-        "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write"
+        "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
+        "generate:licenses": "cd ./ui && npm-license-crawler -onlyDirectDependencies -json LICENSES.json && cd .. && cd ./branding && npm-license-crawler -onlyDirectDependencies -json LICENSES.json",
+        "precommit": "yarn && yarn prettier && yarn build:all && yarn generate:licenses && yarn test"
     },
     "repository": {
         "type": "git",
@@ -16,12 +18,11 @@
     },
     "keywords": [
         "Brightlayer UI",
-        "colors",
+        "Branding",
+        "Colors",
         "Eaton",
-        "Power",
-        "Xpert",
-        "quality",
-        "lighting"
+        "Quality",
+        "Lighting"
     ],
     "author": "brightlayer-ui <brightlayer-ui@eaton.com>",
     "license": "BSD-3-Clause",
@@ -32,6 +33,7 @@
     "prettier": "@brightlayer-ui/prettier-config",
     "devDependencies": {
         "@brightlayer-ui/prettier-config": "^1.0.2",
+        "npm-license-crawler": "^0.2.1",
         "prettier": "^2.2.1",
         "typescript": "^3.7.2"
     }
