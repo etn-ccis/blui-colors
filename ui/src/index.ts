@@ -7,3 +7,4 @@ This code is licensed under the BSD-3 license found in the LICENSE file in the r
 **/
 
 export * from './palette';
+export * as BLUIColors from './palette';

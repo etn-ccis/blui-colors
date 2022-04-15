@@ -1,6 +1,10 @@
 # CHANGELOG
 
-## v3.2.0 (Not yet published)
+## v3.2.0 (Not published yet)
+
+### Changed
+
+-   Changed build module from `commonjs` to `es2020` ([#47](https://github.com/brightlayer-ui/colors/issues/47)).
 
 ### Updated
 
