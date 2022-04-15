@@ -28,7 +28,7 @@
     },
     "homepage": "https://github.com/brightlayer-ui/colors#readme",
     "dependencies": {
-        "@brightlayer-ui/types": "^1.0.0"
+        "@brightlayer-ui/types": "^2.0.0"
     },
     "devDependencies": {
         "typescript": "^4.6.3"
