@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v3.1.0 (Not published yet)
+## v3.1.0 (April 15, 2022)
 
 ### Added
 
