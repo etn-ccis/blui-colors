@@ -1,5 +1,21 @@
 # CHANGELOG
 
+## v3.1.0 (April 15, 2022)
+
+### Added
+
+-   Added top level export `BLUIColors`.
+    
+### Changed
+
+-   Changed build module from `commonjs` to `es2020` ([#47](https://github.com/brightlayer-ui/colors/issues/47)).
+
+## Package Migration Notice
+
+Previous versions listed after this indicator refer to our deprecated `@pxblue` packages.
+
+---
+
 ## v3.0.1 (October 20, 2021)
 
 ### Changed

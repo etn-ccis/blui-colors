@@ -7,7 +7,7 @@
   resolved "https://registry.yarnpkg.com/@brightlayer-ui/types/-/types-1.0.0.tgz#b3208cdfad1e84d4e42ca5af0bb0f244595862ab"
   integrity sha512-g6vNYbtsFIMs/OJOdmYlcdmIov9xc35SfTITpqwL44kbqJa9WqwlvvNmyseuTN/9aIcoVFipIZZw/h5qcHufRQ==
 
-typescript@^3.7.3:
-  version "3.7.3"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.7.3.tgz#b36840668a16458a7025b9eabfad11b66ab85c69"
-  integrity sha512-Mcr/Qk7hXqFBXMN7p7Lusj1ktCBydylfQM/FZCk5glCNQJrCUKPkMHdo9R0MTFWsC/4kPFvDS0fDPvukfCkFsw==
+typescript@^4.6.3:
+  version "4.6.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.3.tgz#eefeafa6afdd31d725584c67a0eaba80f6fc6c6c"
+  integrity sha512-yNIatDa5iaofVozS/uQJEl3JRWLKKGJKh6Yaiv0GLGSuhpFJe7P3SbHZ8/yjAHRQwKRoA6YZqlfjXWmVzoVSMw==

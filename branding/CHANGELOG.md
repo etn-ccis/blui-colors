@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v3.2.0 (April 15, 2022)
+
+### Changed
+
+-   Changed build module from `commonjs` to `es2020` ([#47](https://github.com/brightlayer-ui/colors/issues/47)).
+
+### Updated
+
+-   Updated palette type definition to use `@brightlayer-ui/types@2.0.0`.
+
 ## v3.1.0 (October 20, 2021)
 
 ### Changed
