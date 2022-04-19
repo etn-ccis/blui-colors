@@ -4,7 +4,7 @@
 
 ### Changed
 
--   Changed build module from `commonjs` to `es2020` ([#47](https://github.com/brightlayer-ui/colors/issues/47)).
+-   Changed build module from `commonjs` to `es2015` ([#47](https://github.com/brightlayer-ui/colors/issues/47)).
 
 ### Updated
 
