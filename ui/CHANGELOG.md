@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v3.1.1 (Not yet published)
+
+### Changed
+
+- Reverted change from version `3.1.0` & default added a `es2015` build option.
+
 ## v3.1.0 (April 15, 2022)
 
 ### Added
