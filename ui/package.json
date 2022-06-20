@@ -1,9 +1,11 @@
 {
     "name": "@brightlayer-ui/colors",
-    "version": "3.1.1-beta.0",
+    "version": "3.1.1-beta.1",
     "description": "Brightlayer UI colors for Eaton applications",
     "main": "./dist/commonjs/index.js",
     "types": "./dist/commonjs/index.d.ts",
+    "module": "./dist/es2015/index.js",
+    "type": "module",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "yarn && tsc --module commonjs --outDir dist/commonjs && tsc --module ES2015 --outDir dist/es2015",
