@@ -1,10 +1,16 @@
 # CHANGELOG
 
+## v3.2.1 (June 20, 2022)
+
+### Changed
+
+-   Reverted change from version `3.2.0` & default added a `es2015` build option.
+
 ## v3.2.0 (April 15, 2022)
 
 ### Changed
 
--   Changed build module from `commonjs` to `es2020` ([#47](https://github.com/brightlayer-ui/colors/issues/47)).
+-   Changed build module from `commonjs` to `es2015` ([#47](https://github.com/brightlayer-ui/colors/issues/47)).
 
 ### Updated
 
