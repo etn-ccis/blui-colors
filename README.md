@@ -1,3 +1,5 @@
+> This repo has been archived and moved [here](https://github.com/etn-ccis/blui-colors).
+
 # Brightlayer UI Colors
 
 This repository contains definitions for various colors used throughout Brightlayer UI applications.
