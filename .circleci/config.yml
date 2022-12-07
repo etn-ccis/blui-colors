@@ -34,7 +34,7 @@ jobs:
       - run:
           name: Tag @brightlayer-ui/colors-branding
           command: |
-            cd branding && yarn tag:package -b $CIRCLE_BRANCH -s -blui-colors-branding
+            cd branding && yarn tag:package -b master -s -blui-colors-branding
 
 workflows:
   version: 2
