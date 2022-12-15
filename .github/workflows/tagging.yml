@@ -2,22 +2,22 @@ name: Tagging
 
 env:
   GH_TOKEN: ${{ github.token }}
-  BRANCH_NAME: dev
+  CURRENT_BRANCH: ${{ github.ref_name }}
 
 on:
   push:
     branches:
-      - ${{ BRANCH_NAME }}
+      - dev
 
 jobs:
   tag-colors-package:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: cd ui && yarn tag:package -b ${BRANCH_NAME} -s -blui-colors
+      - run: echo ${CURRENT_BRANCH} && cd ui && yarn tag:package -b ${CURRENT_BRANCH} -s -blui-colors
 
   tag-branding-package:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: cd branding && yarn tag:package -b ${BRANCH_NAME} -s -blui-colors-branding
+      - run: cd branding && yarn tag:package -b ${CURRENT_BRANCH} -s -blui-colors-branding
