@@ -10,17 +10,11 @@ jobs:
   tag-colors-package:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Tag UI Colors
+      - uses: actions/checkout@v2
       - run: cd ui && yarn tag:package -b master -s -blui-colors
 
-  tag-branding-package:
+  Tag @brightlayer-ui/colors-branding:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Tag Branding Colors
+      - uses: actions/checkout@v2
       - run: cd branding && yarn tag:package -b master -s -blui-colors-branding
