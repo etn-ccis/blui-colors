@@ -1,11 +1,5 @@
 # CHANGELOG
 
-## v3.2.2 (December 7, 2022)
-
-### Changed
-
--   Nothing! This is a test publish.
-
 ## v3.2.1 (June 20, 2022)
 
 ### Changed
