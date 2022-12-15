@@ -9,6 +9,9 @@ on: pull_request
 jobs:
   tag-colors-package:
     runs-on: ubuntu-latest
+  env:
+    GH_TOKEN: ${{ github.token }}
+
     steps:
       - uses: actions/checkout@v2
       - run: cd ui && yarn tag:package -b master -s -blui-colors
