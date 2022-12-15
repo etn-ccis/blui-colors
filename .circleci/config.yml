@@ -21,24 +21,17 @@ jobs:
           paths:
             - branding/dist
             - ui/dist
-  tag:
-    docker:
-      - image: cimg/node:14.19.0-browsers
-    steps:
-      - checkout
-      - gh/setup
-      - run:
-          name: Tag @brightlayer-ui/colors
-          command: |
-            cd ui && yarn tag:package -b $CIRCLE_BRANCH -s -blui-colors
-      - run:
-          name: Tag @brightlayer-ui/colors-branding
-          command: |
-            cd branding && yarn tag:package -b master -s -blui-colors-branding
 
 workflows:
   version: 2
   colors:
     jobs:
       - build
-      - tag
+      - publish:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - master
+                - dev

@@ -1,0 +1,26 @@
+name: Tagging
+
+on:
+  push
+   # push:
+   # branches:
+   #   - master
+
+jobs:
+  tag-colors-package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Tag UI Colors
+      - run: cd ui && yarn tag:package -b master -s -blui-colors
+
+  tag-branding-package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Tag Branding Colors
+      - run: cd branding && yarn tag:package -b master -s -blui-colors-branding
