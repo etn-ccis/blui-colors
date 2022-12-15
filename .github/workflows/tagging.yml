@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: cd ui && yarn tag:package -b ${BRANCH_NAME} -s -blui-colors
+      - run: echo ${BRANCH_NAME} && cd ui && yarn tag:package -b ${BRANCH_NAME} -s -blui-colors
 
   tag-branding-package:
     runs-on: ubuntu-latest
