@@ -8,8 +8,8 @@ on: pull_request
 
 env:
   GH_TOKEN: ${{ github.token }}
-  BRANCH_NAME: ${{ github.head_ref_name || github.head_ref_name }}
-  BRANCH_NAMED: ${{ github.base_ref_name || github.base_ref_name }}
+  BRANCH_NAME: ${{ github.head_ref || github.head_ref }}
+  BRANCH_NAMED: ${{ github.base_ref || github.base_ref }}
 
 jobs:
   tag-colors-package:
