@@ -8,14 +8,15 @@ on: pull_request
 
 env:
   GH_TOKEN: ${{ github.token }}
-  BRANCH_NAME: ${{ github.ref_name }}
+  BRANCH_NAME: ${{ github.head_ref_name || github.head_ref_name }}
+  BRANCH_NAMED: ${{ github.base_ref_name || github.base_ref_name }}
 
 jobs:
   tag-colors-package:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: echo ${BRANCH_NAME} && cd ui && yarn tag:package -b ${BRANCH_NAME} -s -blui-colors
+      - run: echo ${BRANCH_NAME}   && echo ${BRANCH_NAMED} && cd ui && yarn tag:package -b ${BRANCH_NAME} -s -blui-colors
 
   tag-branding-package:
     runs-on: ubuntu-latest
