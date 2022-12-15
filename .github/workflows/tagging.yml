@@ -1,0 +1,23 @@
+name: Tagging
+
+on:
+  push:
+    branches:
+      - dev
+
+env:
+  GH_TOKEN: ${{ github.token }}
+  BRANCH_NAME: ${{ github.head_ref || github.base_ref }}
+
+jobs:
+  tag-colors-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: echo ${BRANCH_NAME} && cd ui && yarn tag:package -b ${BRANCH_NAME} -s -blui-colors
+
+  tag-branding-package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: cd branding && yarn tag:package -b ${BRANCH_NAME} -s -blui-colors-branding
