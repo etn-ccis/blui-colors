@@ -68,7 +68,7 @@ To contribute to the repo, clone a local copy:
 
 ```
 git clone https://github.com/etn-ccis/blui-colors.git
-cd colors
+cd blui-colors
 ```
 
 ## Publishing
