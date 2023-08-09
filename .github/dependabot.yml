@@ -9,7 +9,6 @@ updates:
       target-branch: 'dev'
       labels:
           - 'external-dependency'
-          - 'brightlayer-ui'
 
     - package-ecosystem: 'npm'
       directory: '/branding'
@@ -20,7 +19,6 @@ updates:
       target-branch: 'dev'
       labels:
           - 'external-dependency'
-          - 'brightlayer-ui'
 
     - package-ecosystem: 'npm'
       directory: '/ui'
@@ -31,5 +29,4 @@ updates:
       target-branch: 'dev'
       labels:
           - 'external-dependency'
-          - 'brightlayer-ui'
           
