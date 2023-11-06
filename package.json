@@ -5,8 +5,8 @@
     "main": "index.ts",
     "scripts": {
         "test": "./buildTest.sh",
-        "build:colors": "cd ui && yarn build && cd ..",
-        "build:colors-branding": "cd branding && yarn build && cd ..",
+        "build:colors": "cd ui/src/colors && yarn build && cd ..",
+        "build:colors-branding": "cd src/branding && yarn build && cd ..",
         "build:all": "yarn build:colors && yarn build:colors-branding",
         "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
         "generate:licenses": "cd ./ui && npm-license-crawler -onlyDirectDependencies -json LICENSES.json && cd .. && cd ./branding && npm-license-crawler -onlyDirectDependencies -json LICENSES.json",

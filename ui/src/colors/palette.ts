@@ -5,11 +5,11 @@ All rights reserved.
  
 This code is licensed under the BSD-3 license found in the LICENSE file in the root directory of this source tree and at https://opensource.org/licenses/BSD-3-Clause.
 **/
-import { BLUIColor } from '@brightlayer-ui/types';
+import { Error, Neutral, NeutralVariant, Orange, Primary, Purple, Success, Warning } from '../types/colorType';
 
 /* Primary Colors / User Interface Colors */
 
-export const primary: BLUIColor = {
+export const primary: Primary = {
     0: '#000000',
     10: '#001B3D',
     20: '#003063',
@@ -25,7 +25,7 @@ export const primary: BLUIColor = {
     100: '#FFFFFF',
 };
 
-export const neutral: BLUIColor = {
+export const neutral: Neutral = {
     0: '#000000',
     4: '#0D1317',
     6: '#141C1F',
@@ -50,7 +50,7 @@ export const neutral: BLUIColor = {
     100: '#FFFFFF',
 }
 
-export const neutralVariant: BLUIColor = {
+export const neutralVariant: NeutralVariant = {
     0: '#000000',
     10: '#181C22',
     20: '#2D3038',
@@ -67,7 +67,7 @@ export const neutralVariant: BLUIColor = {
 }
 
 /* Status Colors */
-export const error: BLUIColor = {
+export const error: Error = {
     0: '#000000',
     10: '#410002',
     20: '#690005',
@@ -83,7 +83,7 @@ export const error: BLUIColor = {
     100: '#FFFFFF',
 }
 
-export const warning: BLUIColor = {
+export const warning: Warning = {
     0: '#000000',
     10: '#211B00',
     20: '#383000',
@@ -99,7 +99,7 @@ export const warning: BLUIColor = {
     100: '#FFFFFF',
 }
 
-export const success: BLUIColor = {
+export const success: Success = {
     0: '#000000',
     4: '#022100',
     10: '#022100',
@@ -116,7 +116,7 @@ export const success: BLUIColor = {
     100: '#FFFFFF',
 }
 
-export const orange: BLUIColor = {
+export const orange: Orange = {
     0: '#000000',
     10: '#2D1600',
     20: '#4B2800',
@@ -132,7 +132,7 @@ export const orange: BLUIColor = {
     100: '#FFFFFF',
 }
 
-export const purple: BLUIColor = {
+export const purple: Purple = {
     0: '#000000',
     10: '#2C0051',
     20: '#480081',
