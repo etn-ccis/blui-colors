@@ -7,5 +7,5 @@
         "strict": true,
         "moduleResolution": "node"
     },
-    "include": ["src/*"]
+    "include": ["src/*", "src/branding/*", "src/colors/*", "src/types/*"]
 }

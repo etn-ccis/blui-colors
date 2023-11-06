@@ -5,17 +5,13 @@ This package contains Brightlayer UI color definitions. These are intended for u
 It contains the following color defintions:
 
 ```
-blue / $blui-blue
-white / $blui-white
-gray / $blui-gray
-black / $blui-black
-darkBlack / $blui-darkBlack
-red / $blui-red
+primary / $blui-primary
+neutral / $blui-neutral
+neutralVariant / $blui-neutralVariant
+error / $blui-error
+warning / $blui-warning
+success / $blui-success
 orange / $blui-orange
-gold / $blui-gold
-yellow / $blui-yellow
-green / $blui-green
-lightBlue / $blui-lightBlue
 purple / $blui-purple
 ```
 
