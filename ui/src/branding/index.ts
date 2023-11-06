@@ -8,7 +8,7 @@
 
 // export * from './palette';
 // import * as Colors from './palette';
-import{ BrandingColors } from './palette';
+import { BrandingColors } from './palette';
 export const chartColors = [
     BrandingColors.teal,
     BrandingColors.citrus,

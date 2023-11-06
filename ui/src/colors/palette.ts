@@ -48,7 +48,7 @@ export const neutral: Neutral = {
     98: '#F4F8FA',
     99: '#F8FCFC',
     100: '#FFFFFF',
-}
+};
 
 export const neutralVariant: NeutralVariant = {
     0: '#000000',
@@ -64,7 +64,7 @@ export const neutralVariant: NeutralVariant = {
     95: '#EEF0FA',
     99: '#FDFBFF',
     100: '#FFFFFF',
-}
+};
 
 /* Status Colors */
 export const error: Error = {
@@ -81,7 +81,7 @@ export const error: Error = {
     95: '#FFEDEA',
     99: '#FFFBFF',
     100: '#FFFFFF',
-}
+};
 
 export const warning: Warning = {
     0: '#000000',
@@ -97,7 +97,7 @@ export const warning: Warning = {
     95: '#FFF1B6',
     98: '#FFF9EC',
     100: '#FFFFFF',
-}
+};
 
 export const success: Success = {
     0: '#000000',
@@ -114,7 +114,7 @@ export const success: Success = {
     95: '#CBFFB6',
     98: '#EDFFE1',
     100: '#FFFFFF',
-}
+};
 
 export const orange: Orange = {
     0: '#000000',
@@ -130,7 +130,7 @@ export const orange: Orange = {
     95: '#FFEEE1',
     98: '#FFF8F5',
     100: '#FFFFFF',
-}
+};
 
 export const purple: Purple = {
     0: '#000000',
@@ -146,5 +146,4 @@ export const purple: Purple = {
     95: '#F9ECFF',
     98: '#FFF7FF',
     100: '#FFFFFF',
-}
-
+};
