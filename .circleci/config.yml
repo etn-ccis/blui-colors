@@ -3,11 +3,11 @@ orbs:
   gh: circleci/github-cli@1.0.3
 jobs:
   build:
-    docker: 
+    docker:
       - image: cimg/node:14.19.0-browsers
     steps:
       - checkout
-      - run: 
+      - run:
           name: Install Dependencies
           command: yarn
       - run:
@@ -39,20 +39,6 @@ jobs:
       - run:
           name: Publish @brightlayer-ui/colors-branding
           command: cd branding && yarn publish:package -b $CIRCLE_BRANCH
-  tag:
-    docker:
-      - image: cimg/node:14.19.0-browsers
-    steps:
-      - checkout
-      - gh/setup
-      - run:
-          name: Tag @brightlayer-ui/colors
-          command: |
-            cd ui && yarn tag:package -b $CIRCLE_BRANCH -s -blui-colors
-      - run:
-          name: Tag @brightlayer-ui/colors-branding
-          command: |
-            cd branding && yarn tag:package -b $CIRCLE_BRANCH -s -blui-colors-branding
 
 workflows:
   version: 2
@@ -67,10 +53,3 @@ workflows:
               only:
                 - master
                 - dev
-      - tag:
-          requires:
-            - publish
-          filters:
-            branches:
-              only:
-                - master
