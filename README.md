@@ -5,25 +5,22 @@ This repository contains definitions for various colors used throughout Brightla
 The repository has the following directory structure:
 
 ```
-|── /ui                 // standard Brightlayer UI colors (for UIs)
-|   |── palette.scss    // color definitions (SCSS)
+|── /ui                          // standard Brightlayer UI colors (for UIs)
+|   |── palette.scss             // UI color definitions (SCSS)
+|   |── branding-palette.scss    // Branding color definitions (SCSS)
 |   └── /src
-|       |── index.ts
-|       └── palette.ts  // color definitions (TS)
-|
-└── /branding           // branding colors (for charting, etc.)
-|   |── palette.scss    // color definitions (SCSS)
-|   └── /src
-|       |── index.ts
-|       └── palette.ts  // color definitions (TS)
+|       └── /colors
+|           |── index.ts
+|           └── palette.ts      // color definitions (TS)
+|       └── /branding           // branding colors (for charting, etc.)
+|       |   └── /src
+|       |       |── index.ts
+|       |       └── palette.ts  // color definitions (TS)
 ```
 
 ## NPM packages
 
-The two folders in this repository publish to two separate npm repositories:
-
--   [@brightlayer-ui/colors](https://www.npmjs.com/package/@brightlayer-ui/colors)
--   [@brightlayer-ui/colors-branding](https://www.npmjs.com/package/@brightlayer-ui/colors-branding)
+This repository publish [@brightlayer-ui/colors](https://www.npmjs.com/package/@brightlayer-ui/colors)
 
 ## Installation
 
@@ -31,14 +28,12 @@ Install with npm
 
 ```
 npm install --save @brightlayer-ui/colors
-npm install --save @brightlayer-ui/colors-branding
 ```
 
 or yarn
 
 ```
 yarn add @brightlayer-ui/colors
-yarn add @brightlayer-ui/colors-branding
 ```
 
 ## Usage
@@ -51,7 +46,7 @@ Incorporating these colors into your project is handled differently depending on
 // in styles.scss or your top-level sass file
 @use '~@brightlayer-ui/colors/palette.scss';
 ...
-background-color: map-get(palette.$blui-blue, 500)
+background-color: map-get(palette.$blui-primary, 10)
 ```
 
 ### React or React Native
@@ -59,7 +54,7 @@ background-color: map-get(palette.$blui-blue, 500)
 ```
 import * as Colors from '@brightlayer-ui/colors';
 ...
-<div style={{background: Colors.blue['500']}}/>
+<div style={{background: Colors.primary['0']}}/>
 ```
 
 ## Contributing
@@ -91,14 +86,10 @@ You can publish packages to npm using npm:
 
 ```
 npm run publish:colors
-npm run publish:colors-branding
-npm run publish:all
 ```
 
 or yarn:
 
 ```
 yarn publish:colors
-yarn publish:colors-branding
-yarn publish:all
 ```

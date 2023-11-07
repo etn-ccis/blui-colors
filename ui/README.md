@@ -4,6 +4,7 @@ This package contains Brightlayer UI color definitions. These are intended for u
 
 It contains the following color defintions:
 
+## UI Colors
 ```
 primary / $blui-primary
 neutral / $blui-neutral
@@ -14,9 +15,29 @@ success / $blui-success
 orange / $blui-orange
 purple / $blui-purple
 ```
-
-These all have color definitions for the following values: 50, 100, 200, 300, 400, 500, 600, 700, 800, 900.
-
+## Branding Colors
+```
+lightGray / $brand-lightGray
+gray / $brand-gray
+darkGray / $brand-darkGray
+sky / $brand-sky
+eatonBlue / $brand-eatonBlue
+navy / $brand-navy
+ash / $brand-ash
+teal / $brand-teal
+pine / $brand-pine
+sage / $brand-sage
+citrus / $brand-citrus
+emerald / $brand-emerald
+butter / $brand-butter
+goldenrod / $brand-goldenrod
+toad / $brand-toad
+trophy / $brand-trophy
+sunset / $brand-sunset
+rust / $brand-rust
+crimson / $brand-crimson
+wine / $brand-wine
+```
 ## Installation
 
 Install with npm
@@ -38,10 +59,17 @@ Incorporating these colors into your project is handled differently depending on
 ### Angular or Ionic
 
 ```
-// in styles.scss or your top-level sass file
-@import '~@brightlayer-ui/colors/palette.scss'
+// For UI Colors in styles.scss or your top-level sass file
+@import '~@brightlayer-ui/colors/palette.scss';
 ...
-background-color: map-get($blui-blue, 500)
+background-color: map-get($blui-primary, 10);
+```
+
+```
+// For Branding Colors in styles.scss or your top-level sass file
+@import '~@brightlayer-ui/colors/branding-pallete.scss';
+...
+background-color: $brand-lightGray;
 ```
 
 ### React or React Native
@@ -49,5 +77,5 @@ background-color: map-get($blui-blue, 500)
 ```
 import * as Colors from '@brightlayer-ui/colors';
 ...
-<div style={{background: Colors.blue['500']}}/>
+<div style={{background: Colors.BLUIColors.primary['10']}}/>
 ```

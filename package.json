@@ -5,8 +5,7 @@
     "main": "index.ts",
     "scripts": {
         "test": "./buildTest.sh",
-        "build:colors": "cd ui/src/colors && yarn build && cd ..",
-        "build:all": "yarn build:colors",
+        "build": "cd ui && yarn build && cd ..",
         "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
         "generate:licenses": "cd ./ui && npm-license-crawler -onlyDirectDependencies -json LICENSES.json && cd .. && npm-license-crawler -onlyDirectDependencies -json LICENSES.json",
         "precommit": "yarn && yarn prettier && yarn build:all && yarn generate:licenses && yarn test"
