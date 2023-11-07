@@ -5,6 +5,7 @@ This package contains Brightlayer UI color definitions. These are intended for u
 It contains the following color defintions:
 
 ## UI Colors
+
 ```
 primary / $blui-primary
 neutral / $blui-neutral
@@ -15,7 +16,9 @@ success / $blui-success
 orange / $blui-orange
 purple / $blui-purple
 ```
+
 ## Branding Colors
+
 ```
 lightGray / $brand-lightGray
 gray / $brand-gray
@@ -38,6 +41,7 @@ rust / $brand-rust
 crimson / $brand-crimson
 wine / $brand-wine
 ```
+
 ## Installation
 
 Install with npm
