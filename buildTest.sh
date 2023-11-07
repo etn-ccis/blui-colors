@@ -19,8 +19,6 @@ echo -ne "  UI README: "
 if [ ! -f ./ui/README.md ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
 echo -ne "  UI license: "
 if [ ! -f ./ui/LICENSE ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
-echo -ne "  UI licenses.json: "
-if [ ! -f ./ui/LICENSES.json ]; then echo -e "${RED}Not Found${NC}" && exit 1; else echo -e "${GREEN}Found${NC}"; fi
 
 
 echo -e "\r\n${GREEN}-----------------------------------"

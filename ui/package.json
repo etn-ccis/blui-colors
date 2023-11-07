@@ -27,9 +27,6 @@
         "url": "https://github.com/etn-ccis/blui-colors/issues"
     },
     "homepage": "https://github.com/etn-ccis/blui-colors#readme",
-    "dependencies": {
-        "@brightlayer-ui/types": "^2.0.0"
-    },
     "devDependencies": {
         "typescript": "^5.0.3"
     },
@@ -37,9 +34,9 @@
         "package.json",
         "README.md",
         "LICENSE",
-        "LICENSES.json",
         "CHANGELOG.md",
         "dist/",
+        "branding-pallete.scss",
         "palette.scss"
     ]
 }
