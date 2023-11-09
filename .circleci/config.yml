@@ -19,7 +19,7 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - ui/dist
+            - /dist
   publish:
     docker:
       - image: cimg/node:14.19.0-browsers
@@ -34,7 +34,7 @@ jobs:
             echo "//registry.yarnpkg.com/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run:
           name: Publish @brightlayer-ui/colors
-          command: cd ui && yarn publish:package -b $CIRCLE_BRANCH
+          command: yarn publish:package -b $CIRCLE_BRANCH
 
 workflows:
   version: 2
