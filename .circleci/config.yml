@@ -19,7 +19,7 @@ jobs:
       - persist_to_workspace:
           root: .
           paths:
-            - /dist
+            - dist
   publish:
     docker:
       - image: cimg/node:14.19.0-browsers
