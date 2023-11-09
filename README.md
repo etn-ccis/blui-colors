@@ -1,26 +1,46 @@
 # Brightlayer UI Colors
 
-This repository contains definitions for various colors used throughout Brightlayer UI applications.
+This package contains Brightlayer UI color definitions. These are intended for use as primary UI colors.
 
-The repository has the following directory structure:
+It contains the following color defintions:
+
+## UI Colors
 
 ```
-|── /ui                          // standard Brightlayer UI colors (for UIs)
-|   |── palette.scss             // UI color definitions (SCSS)
-|   |── branding-palette.scss    // Branding color definitions (SCSS)
-|   └── /src
-|       └── /colors
-|           |── index.ts
-|           └── palette.ts      // color definitions (TS)
-|       └── /branding           // branding colors (for charting, etc.)
-|       |   └── /src
-|       |       |── index.ts
-|       |       └── palette.ts  // color definitions (TS)
+primary / $blui-primary
+neutral / $blui-neutral
+neutralVariant / $blui-neutralVariant
+error / $blui-error
+warning / $blui-warning
+success / $blui-success
+orange / $blui-orange
+purple / $blui-purple
 ```
 
-## NPM packages
+## Branding Colors
 
-This repository publish [@brightlayer-ui/colors](https://www.npmjs.com/package/@brightlayer-ui/colors)
+```
+lightGray / $brand-lightGray
+gray / $brand-gray
+darkGray / $brand-darkGray
+sky / $brand-sky
+eatonBlue / $brand-eatonBlue
+navy / $brand-navy
+ash / $brand-ash
+teal / $brand-teal
+pine / $brand-pine
+sage / $brand-sage
+citrus / $brand-citrus
+emerald / $brand-emerald
+butter / $brand-butter
+goldenrod / $brand-goldenrod
+toad / $brand-toad
+trophy / $brand-trophy
+sunset / $brand-sunset
+rust / $brand-rust
+crimson / $brand-crimson
+wine / $brand-wine
+```
 
 ## Installation
 
@@ -40,56 +60,26 @@ yarn add @brightlayer-ui/colors
 
 Incorporating these colors into your project is handled differently depending on the framework that you are using.
 
-### Angular
+### CSS variables
 
 ```
-// in styles.scss or your top-level sass file
-@use '~@brightlayer-ui/colors/palette.scss';
+// For UI Colors in styles.scss or your top-level sass file
+@import '~@brightlayer-ui/colors/palette.scss';
 ...
-background-color: map-get(palette.$blui-primary, 10)
+background-color: map-get($blui-primary, 10);
 ```
 
-### React or React Native
+```
+// For Branding Colors in styles.scss or your top-level sass file
+@import '~@brightlayer-ui/colors/branding-pallete.scss';
+...
+background-color: $brand-lightGray;
+```
+
+### JSON Object
 
 ```
 import * as Colors from '@brightlayer-ui/colors';
 ...
-<div style={{background: Colors.primary['0']}}/>
-```
-
-## Contributing
-
-To contribute to the repo, clone a local copy:
-
-```
-git clone https://github.com/etn-ccis/blui-colors.git
-cd blui-colors
-```
-
-## Publishing
-
-To publish any of these packages to npm, you must be authenticated to npm in your terminal as brightlayerui. Type the following to see if you are authenticated:
-
-```
-npm whoami
-```
-
-If you are not, you will need to log in:
-
-```
-npm adduser brightlayerui
-```
-
-You'll be prompted to enter the password and then you'll be ready to publish.
-
-You can publish packages to npm using npm:
-
-```
-npm run publish:colors
-```
-
-or yarn:
-
-```
-yarn publish:colors
+<div style={{background: Colors.BLUIColors.primary['10']}}/>
 ```
