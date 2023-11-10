@@ -5,10 +5,8 @@
 ### Changed
 
 -   Move Branding colors under `@brightlayer-ui/colors` package.
--   Update UI colors and Branding colors as per new Material You designs.
+-   Update UI colors and Branding colors as per new Material Design 3.
 -   Remove dependency of `@brightlayer-ui/types` and moved type in `@brightlayer-ui/colors` package.
-
-## v3.1.0 (April 15, 2022)
 
 ## v3.1.1 (June 20, 2022)
 
