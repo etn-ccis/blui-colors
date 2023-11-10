@@ -1,6 +1,6 @@
 # Brightlayer UI Colors
 
-This package contains Brightlayer UI color definitions. These are intended for use as primary UI colors.
+This repository contains definitions for various colors used throughout Brightlayer UI applications.
 
 It contains the following color defintions:
 
@@ -71,7 +71,7 @@ background-color: map-get($blui-primary, 10);
 
 ```
 // For Branding Colors in styles.scss or your top-level sass file
-@import '~@brightlayer-ui/colors/branding-pallete.scss';
+@import '~@brightlayer-ui/colors/branding-palette.scss';
 ...
 background-color: $brand-lightGray;
 ```
