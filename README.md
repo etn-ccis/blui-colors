@@ -81,6 +81,6 @@ background-color: $brand-lightGray;
 ```
 import  Colors, {BrandingColors} from '@brightlayer-ui/colors';
 ...
-<div style={{background: Colors.BLUIColors.primary['10']}}/>
+<div style={{background: Colors.primary[10]}}/>
 <div style={{background: BrandingColors.teal}}/>
 ```

@@ -1,3 +1,3 @@
-export * from './colors/palette';
+export * from './palette';
 
-export { BrandingColors, chartColors as ChartColors } from './branding/palette';
+export { BrandingColors, chartColors as ChartColors } from './branding-palette';
