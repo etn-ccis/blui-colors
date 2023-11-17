@@ -6,7 +6,7 @@
     "types": "./dist/index.d.ts",
     "scripts": {
         "test": "./buildTest.sh",
-        "build": "yarn tsc && yarn build:colors-branding",
+        "build": "yarn tsc",
         "build:colors-branding": "yarn && bash ./buildBrandingColors.sh",
         "build:all": "yarn build && yarn build:colors-branding",
         "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
