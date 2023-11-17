@@ -12,7 +12,7 @@ jobs:
           command: yarn
       - run:
           name: Build Packages
-          command: yarn build
+          command: yarn build:all
       - run:
           name: Verify Artifacts
           command: yarn test
