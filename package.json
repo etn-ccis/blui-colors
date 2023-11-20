@@ -6,9 +6,9 @@
     "types": "./dist/index.d.ts",
     "scripts": {
         "test": "./buildTest.sh",
-        "build": "yarn tsc",
-        "build:colors-branding": "yarn && bash ./buildBrandingColors.sh",
-        "build:all": "yarn build && yarn build:colors-branding",
+        "clear:build": "rm -rf dist && rm -rf branding",
+        "move:branding": "cp -r ./dist/branding branding && rm -rf ./dist/branding",
+        "build": "yarn clear:build && yarn tsc && yarn move:branding",
         "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
         "precommit": "yarn && yarn prettier && yarn build && yarn test",
         "publish:package": "set npm_config_yes=true && npx -p @brightlayer-ui/publish blui-publish",
