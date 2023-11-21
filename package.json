@@ -44,7 +44,7 @@
         "LICENSE",
         "CHANGELOG.md",
         "dist/",
-        "branding-pallete.scss",
+        "branding-palette.scss",
         "palette.scss",
         "branding/"
     ]
