@@ -6,7 +6,7 @@ All rights reserved.
 This code is licensed under the BSD-3 license found in the LICENSE file in the root directory of this source tree and at https://opensource.org/licenses/BSD-3-Clause.
 **/
 
-export enum BrandingColors {
+enum BrandingColors {
     lightGray = '#98A4AE',
     gray = '#5B6770',
     darkGray = '#333F48',
@@ -41,3 +41,26 @@ export const chartColors = [
     BrandingColors.navy,
     BrandingColors.sky,
 ];
+
+export const {
+    lightGray,
+    gray,
+    darkGray,
+    sky,
+    eatonBlue,
+    navy,
+    ash,
+    teal,
+    pine,
+    sage,
+    citrus,
+    emerald,
+    butter,
+    goldenrod,
+    toad,
+    trophy,
+    sunset,
+    rust,
+    crimson,
+    wine,
+} = BrandingColors;

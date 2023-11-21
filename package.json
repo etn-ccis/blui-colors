@@ -1,12 +1,14 @@
 {
     "name": "@brightlayer-ui/colors",
-    "version": "4.0.0-alpha.1",
+    "version": "4.0.0-alpha.2",
     "description": "Brightlayer UI colors for Eaton applications",
-    "main": "./dist/commonjs/index.js",
-    "types": "./dist/commonjs/index.d.ts",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
     "scripts": {
         "test": "./buildTest.sh",
-        "build": "yarn && tsc --module commonjs --outDir dist/commonjs && tsc --module ES2015 --outDir dist/es2015",
+        "clear:build": "rm -rf dist && rm -rf branding",
+        "move:branding": "cp -r ./dist/branding branding && rm -rf ./dist/branding",
+        "build": "yarn clear:build && yarn tsc && yarn move:branding",
         "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
         "precommit": "yarn && yarn prettier && yarn build && yarn test",
         "publish:package": "set npm_config_yes=true && npx -p @brightlayer-ui/publish blui-publish",
@@ -42,7 +44,8 @@
         "LICENSE",
         "CHANGELOG.md",
         "dist/",
-        "branding-pallete.scss",
-        "palette.scss"
+        "branding-palette.scss",
+        "palette.scss",
+        "branding/"
     ]
 }

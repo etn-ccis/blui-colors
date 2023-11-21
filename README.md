@@ -79,8 +79,11 @@ background-color: $brand-lightGray;
 ### JSON Object
 
 ```
-import  Colors, {BrandingColors} from '@brightlayer-ui/colors';
+import Colors, {primary} from '@brightlayer-ui/colors';
+import BrandingColors, {lightGray} from '@brightlayer-ui/colors/branding';
 ...
 <div style={{background: Colors.primary[10]}}/>
-<div style={{background: BrandingColors.teal}}/>
+<div style={{background: primary[10]}}/>
+<div style={{background: BrandingColors.lightGray}}/>
+<div style={{background: lightGray}}/>
 ```
