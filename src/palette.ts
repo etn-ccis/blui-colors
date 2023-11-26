@@ -147,3 +147,16 @@ export const purple: Purple = {
     98: '#FFF7FF',
     100: '#FFFFFF',
 };
+
+const Colors = {
+    primary: primary,
+    neutral: neutral,
+    neutralVariant: neutralVariant,
+    error: error,
+    warning: warning,
+    success: success,
+    orange: orange,
+    purple: purple,
+};
+
+export default Colors;

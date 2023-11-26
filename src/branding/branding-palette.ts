@@ -64,3 +64,5 @@ export const {
     crimson,
     wine,
 } = BrandingColors;
+
+export default BrandingColors;
