@@ -64,14 +64,14 @@ Incorporating these colors into your project is handled differently depending on
 
 ```
 // For UI Colors in styles.scss or your top-level sass file
-@import '~@brightlayer-ui/colors/palette.scss';
+@import '@brightlayer-ui/colors/palette.scss';
 ...
 background-color: map-get($blui-primary, 10);
 ```
 
 ```
 // For Branding Colors in styles.scss or your top-level sass file
-@import '~@brightlayer-ui/colors/branding-palette.scss';
+@import '@brightlayer-ui/colors/branding-palette.scss';
 ...
 background-color: $brand-lightGray;
 ```
