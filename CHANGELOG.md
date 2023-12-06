@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## v4.0.0 (December 5, 2023)
+## v4.0.0 (December 6, 2023)
 
 ### Changed
 
