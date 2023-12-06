@@ -9,24 +9,3 @@ updates:
       target-branch: 'dev'
       labels:
           - 'external-dependency'
-
-    - package-ecosystem: 'npm'
-      directory: '/branding'
-      schedule:
-          interval: 'monthly'
-          day: 'monday'
-      open-pull-requests-limit: 1
-      target-branch: 'dev'
-      labels:
-          - 'external-dependency'
-
-    - package-ecosystem: 'npm'
-      directory: '/ui'
-      schedule:
-          interval: 'monthly'
-          day: 'monday'
-      open-pull-requests-limit: 1
-      target-branch: 'dev'
-      labels:
-          - 'external-dependency'
-          

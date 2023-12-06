@@ -1,0 +1,145 @@
+/**
+Copyright (c) 2021-present, Eaton
+ 
+All rights reserved.
+ 
+This code is licensed under the BSD-3 license found in the LICENSE file in the root directory of this source tree and at https://opensource.org/licenses/BSD-3-Clause.
+**/
+
+/* Primary Colors / User Interface Colors */
+
+$blui-primary: (
+    0: #000000,
+    10: #001b3d,
+    20: #003063,
+    30: #00468c,
+    40: #005eb8,
+    50: #1c77cc,
+    60: #4d9fec,
+    70: #79bfff,
+    80: #b1daff,
+    90: #d0eafd,
+    95: #e5f5ff,
+    99: #fdfbff,
+    100: #ffffff,
+);
+
+$blui-neutral: (
+    0: #000000,
+    4: #0d1317,
+    6: #141c1f,
+    10: #192024,
+    12: #1e262a,
+    17: #293338,
+    20: #333f48,
+    30: #414e54,
+    40: #4f5b63,
+    50: #5b6770,
+    60: #737f87,
+    70: #98a4ae,
+    80: #bdcad1,
+    87: #ced8de,
+    90: #d7e0e5,
+    92: #e0e7eb,
+    94: #e5ecf0,
+    95: #ebf1f4,
+    97: #f2f6f8,
+    98: #f4f8fa,
+    99: #f8fcfc,
+    100: #ffffff,
+);
+
+$blui-neutralVariant: (
+    0: #000000,
+    10: #181c22,
+    20: #2d3038,
+    30: #44474e,
+    40: #5b5e66,
+    50: #74777f,
+    60: #8e9099,
+    70: #a8abb4,
+    80: #c4c6cf,
+    90: #e0e2ec,
+    95: #eef0fa,
+    99: #fdfbff,
+    100: #ffffff,
+);
+
+/* Status Colors */
+$blui-error: (
+    0: #000000,
+    10: #410002,
+    20: #690005,
+    30: #93000a,
+    40: #ba1a1a,
+    50: #de3730,
+    60: #ff5449,
+    70: #ff897d,
+    80: #ffb4ab,
+    90: #ffdad6,
+    95: #ffedea,
+    99: #fffbff,
+    100: #ffffff,
+);
+$blui-warning: (
+    0: #000000,
+    10: #211b00,
+    20: #383000,
+    30: #524700,
+    40: #6c5e00,
+    50: #887700,
+    60: #a59116,
+    70: #c1ab33,
+    80: #ddc437,
+    90: #fbe365,
+    95: #fff1b6,
+    98: #fff9ec,
+    100: #ffffff,
+);
+
+$blui-success: (
+    0: #000000,
+    4: #022100,
+    10: #022100,
+    20: #053900,
+    30: #0b5300,
+    40: #126e00,
+    50: #198900,
+    60: #27a70b,
+    70: #48c32e,
+    80: #65e049,
+    90: #95f77d,
+    95: #cbffb6,
+    98: #edffe1,
+    100: #ffffff,
+);
+$blui-orange: (
+    0: #000000,
+    10: #2d1600,
+    20: #4b2800,
+    30: #6b3b00,
+    40: #8d4f00,
+    50: #b06400,
+    60: #d37b15,
+    70: #ed8b00,
+    80: #ffb876,
+    90: #ffdcc0,
+    95: #ffeee1,
+    98: #fff8f5,
+    100: #ffffff,
+);
+$blui-purple: (
+    0: #000000,
+    10: #2c0051,
+    20: #480081,
+    30: #6700b5,
+    40: #8424db,
+    50: #9f45f6,
+    60: #b56eff,
+    70: #c994ff,
+    80: #dcb8ff,
+    90: #f0dbff,
+    95: #f9ecff,
+    98: #fff7ff,
+    100: #ffffff,
+);

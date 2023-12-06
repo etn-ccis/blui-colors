@@ -1,5 +1,13 @@
 # CHANGELOG
 
+## v4.0.0 (December 6, 2023)
+
+### Changed
+
+-   Move Branding colors under `@brightlayer-ui/colors/branding` package.
+-   Update UI colors and Branding colors as per new Material Design 3.
+-   Remove dependency of `@brightlayer-ui/types` and moved type in `@brightlayer-ui/colors` package.
+
 ## v3.1.1 (June 20, 2022)
 
 ### Changed
