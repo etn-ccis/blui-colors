@@ -29,19 +29,6 @@ enum BrandingColors {
     wine = '#9D2235',
 }
 
-export const chartColors = [
-    BrandingColors.teal,
-    BrandingColors.citrus,
-    BrandingColors.pine,
-    BrandingColors.emerald,
-    BrandingColors.wine,
-    BrandingColors.crimson,
-    BrandingColors.sunset,
-    BrandingColors.rust,
-    BrandingColors.navy,
-    BrandingColors.sky,
-];
-
 export const {
     lightGray,
     gray,
