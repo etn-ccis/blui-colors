@@ -102,3 +102,5 @@ import BrandingColors, {lightGray} from '@brightlayer-ui/colors/branding';
 ```
 
 You should include @brightlayer-ui/colors version v4 for React Native projects with Material Design v3. For React Native projects with Material Design v2, include @brightlayer-ui/colors version v3.
+
+**Note:** Material Design 3 support is currently available for React Native projects through react-native-paper. React web applications using MUI do not yet have Material Design 3 support.
