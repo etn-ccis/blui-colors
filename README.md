@@ -1,48 +1,29 @@
-[![Build](https://github.com/etn-ccis/blui-colors/actions/workflows/blui-ci.yml/badge.svg?branch=master)](https://github.com/etn-ccis/blui-colors/actions/workflows/blui-ci.yml)
-
 # Brightlayer UI Colors
 
 This repository contains definitions for various colors used throughout Brightlayer UI applications.
 
-It contains the following color defintions:
-
-## UI Colors
+The repository has the following directory structure:
 
 ```
-primary / $blui-primary
-neutral / $blui-neutral
-neutralVariant / $blui-neutralVariant
-error / $blui-error
-warning / $blui-warning
-success / $blui-success
-orange / $blui-orange
-purple / $blui-purple
+|── /ui                 // standard Brightlayer UI colors (for UIs)
+|   |── palette.scss    // color definitions (SCSS)
+|   └── /src
+|       |── index.ts
+|       └── palette.ts  // color definitions (TS)
+|
+└── /branding           // branding colors (for charting, etc.)
+|   |── palette.scss    // color definitions (SCSS)
+|   └── /src
+|       |── index.ts
+|       └── palette.ts  // color definitions (TS)
 ```
 
-## Branding Colors
+## NPM packages
 
-```
-lightGray / $brand-lightGray
-gray / $brand-gray
-darkGray / $brand-darkGray
-sky / $brand-sky
-eatonBlue / $brand-eatonBlue
-navy / $brand-navy
-ash / $brand-ash
-teal / $brand-teal
-pine / $brand-pine
-sage / $brand-sage
-citrus / $brand-citrus
-emerald / $brand-emerald
-butter / $brand-butter
-goldenrod / $brand-goldenrod
-toad / $brand-toad
-trophy / $brand-trophy
-sunset / $brand-sunset
-rust / $brand-rust
-crimson / $brand-crimson
-wine / $brand-wine
-```
+The two folders in this repository publish to two separate npm repositories:
+
+-   [@brightlayer-ui/colors](https://www.npmjs.com/package/@brightlayer-ui/colors)
+-   [@brightlayer-ui/colors-branding](https://www.npmjs.com/package/@brightlayer-ui/colors-branding)
 
 ## Installation
 
@@ -50,57 +31,74 @@ Install with npm
 
 ```
 npm install --save @brightlayer-ui/colors
+npm install --save @brightlayer-ui/colors-branding
 ```
 
 or yarn
 
 ```
 yarn add @brightlayer-ui/colors
+yarn add @brightlayer-ui/colors-branding
 ```
 
 ## Usage
 
 Incorporating these colors into your project is handled differently depending on the framework that you are using.
 
-### CSS variables
+### Angular
 
 ```
-// For UI Colors in styles.scss or your top-level sass file
-@import '@brightlayer-ui/colors/palette.scss';
+// in styles.scss or your top-level sass file
+@use '~@brightlayer-ui/colors/palette.scss';
 ...
-background-color: map-get($blui-primary, 10);
+background-color: map-get(palette.$blui-blue, 500)
 ```
 
+### React or React Native
+
 ```
-// For Branding Colors in styles.scss or your top-level sass file
-@import '@brightlayer-ui/colors/branding-palette.scss';
+import * as Colors from '@brightlayer-ui/colors';
 ...
-background-color: $brand-lightGray;
+<div style={{background: Colors.blue['500']}}/>
 ```
 
-### JSON Object
+## Contributing
+
+To contribute to the repo, clone a local copy:
 
 ```
-import Colors, {primary} from '@brightlayer-ui/colors';
-import BrandingColors, {lightGray} from '@brightlayer-ui/colors/branding';
-...
-<div style={{background: Colors.primary[10]}}/>
-<div style={{background: primary[10]}}/>
-<div style={{background: BrandingColors.lightGray}}/>
-<div style={{background: lightGray}}/>
+git clone https://github.com/brightlayer-ui/colors.git
+cd colors
 ```
 
-## Migration from v3 to v4
+## Publishing
 
-In version 4.0.0, we have updated the UI colors and branding colors palette.
-
-We have deprecated `@brightlayer-ui/colors-branding` and `@brightlayer-ui/types` packages, as they will be part of the `@brightlayer-ui/colors` package.
-The branding colors palette and individual branding colors now can be imported from `@brightlayer-ui/colors/branding`.
+To publish any of these packages to npm, you must be authenticated to npm in your terminal as brightlayerui. Type the following to see if you are authenticated:
 
 ```
-import BrandingColors, {lightGray} from '@brightlayer-ui/colors/branding';
+npm whoami
 ```
 
-You should include @brightlayer-ui/colors version v4 for React Native projects with Material Design v3. For React Native projects with Material Design v2, include @brightlayer-ui/colors version v3.
+If you are not, you will need to log in:
 
-**Note:** Material Design 3 support is currently available for React Native projects through react-native-paper. React web applications using MUI do not yet have Material Design 3 support.
+```
+npm adduser brightlayerui
+```
+
+You'll be prompted to enter the password and then you'll be ready to publish.
+
+You can publish packages to npm using npm:
+
+```
+npm run publish:colors
+npm run publish:colors-branding
+npm run publish:all
+```
+
+or yarn:
+
+```
+yarn publish:colors
+yarn publish:colors-branding
+yarn publish:all
+```

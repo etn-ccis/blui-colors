@@ -11,8 +11,8 @@ package-lock.json
 
 # production
 /build
-/dist
-/branding
+/ui/dist
+/branding/dist
 
 # misc
 .DS_Store

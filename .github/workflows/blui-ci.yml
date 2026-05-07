@@ -2,9 +2,9 @@ name: Build
 
 on:
     push:
-        branches: ['dev', 'master']
+        branches: ['dev', 'main', 'master', 'release-react-color']
     pull_request:
-        branches: ['dev', 'master']
+        branches: ['dev', 'main', 'master', 'release-react-color']
     pull_request_target:
         types:
             - opened
@@ -50,19 +50,19 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: 'yarn'
             - run: yarn
-            - run: yarn build
-            - name: Save dist
+            - run: yarn build:all
+            - name: Save ui dist
               uses: actions/upload-artifact@v4
               with:
-                  name: dist
+                  name: ui-dist
                   if-no-files-found: error
-                  path: dist
-            - name: Save branding
+                  path: ui/dist
+            - name: Save branding dist
               uses: actions/upload-artifact@v4
               with:
-                  name: branding
+                  name: branding-dist
                   if-no-files-found: error
-                  path: branding
+                  path: branding/dist
 
     verify_artifacts:
         runs-on: ubuntu-latest
@@ -75,38 +75,46 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v4
-            - name: Download the dist folder
+            - name: Download ui dist
               uses: actions/download-artifact@v4
               with:
-                  name: dist
-                  path: dist
-            - name: Download the branding folder
+                  name: ui-dist
+                  path: ui/dist
+            - name: Download branding dist
               uses: actions/download-artifact@v4
               with:
-                  name: branding
-                  path: branding
+                  name: branding-dist
+                  path: branding/dist
             - run: yarn test
 
     publish:
         runs-on: ubuntu-latest
-        if: ${{ github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/dev') }}
+        if: ${{ github.event_name == 'push' && (github.ref == 'refs/heads/master' || github.ref == 'refs/heads/dev' || github.ref == 'refs/heads/main' || github.ref == 'refs/heads/release-react-color') }}
         needs: [build_packages, verify_artifacts]
         strategy:
             matrix:
                 node-version: [18.x]
         env:
             NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-            BRANCH: ${{ github.ref == 'refs/heads/master' && 'master' || 'dev' }}
+            BRANCH: ${{ github.ref_name }}
         steps:
             - uses: actions/checkout@v4
-            - name: Download dist
+            - name: Download ui dist
               uses: actions/download-artifact@v4
               with:
-                  name: dist
-                  path: dist
+                  name: ui-dist
+                  path: ui/dist
+            - name: Download branding dist
+              uses: actions/download-artifact@v4
+              with:
+                  name: branding-dist
+                  path: branding/dist
             - uses: actions/setup-node@v4
               with:
                   node-version: ${{ matrix.node-version }}
                   registry-url: 'https://registry.npmjs.org'
             - run: yarn --immutable
-            - run: npm run publish:package -- -b ${{env.BRANCH}}
+            - name: Publish colors
+              run: cd ui && npm run publish:package -- -b ${{env.BRANCH}}
+            - name: Publish colors-branding
+              run: cd branding && npm run publish:package -- -b ${{env.BRANCH}}
