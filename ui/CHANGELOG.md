@@ -4,7 +4,7 @@
 
 ### Changed
 
--   Updated color value of palette for color blue, white, gray, black, dark black.
+-   Updated palette color values for blue, white, gray, black, and darkBlack.
 
 ## v3.1.1 (June 20, 2022)
 
