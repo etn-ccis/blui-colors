@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v3.2.0 (Unreleased)
+
+### Changed
+
+-   Updated palette color values for blue, white, gray, black, and darkBlack.
+
 ## v3.1.1 (June 20, 2022)
 
 ### Changed
