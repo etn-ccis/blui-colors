@@ -181,3 +181,7 @@ export const purple: BLUIColor = {
     900: '#6a1be4',
     contrastDefaultColor: 'light',
 };
+
+export const highlight: string = '#5590EF';
+
+export const highlightBlue: string = '#7BABFF';

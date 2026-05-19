@@ -2,6 +2,10 @@
 
 ## v3.2.0 (Unreleased)
 
+### Added
+
+-   Added new color token `highlight` and `highlightBlue`.
+
 ### Changed
 
 -   Updated palette color values for blue, white, gray, black, and darkBlack.
