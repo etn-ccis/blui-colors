@@ -185,3 +185,5 @@ export const purple: BLUIColor = {
 export const highlight: string = '#5590EF';
 
 export const highlightBlue: string = '#7BABFF';
+
+export const textFieldContainer: string = '#BDCAD1';
