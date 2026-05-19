@@ -5,6 +5,7 @@
 ### Added
 
 -   Added new color token `highlight` and `highlightBlue`.
+-   Added new color token `textFieldContainer`.
 
 ### Changed
 
