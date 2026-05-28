@@ -187,3 +187,7 @@ export const highlight: string = '#5590EF';
 export const highlightBlue: string = '#7BABFF';
 
 export const textFieldContainer: string = '#BDCAD1';
+
+export const lightThemeDivider: string = '#4D5C6A';
+ 
+export const darkThemeDivider: string = '#F5FAFF';
