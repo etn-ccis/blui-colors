@@ -10,7 +10,10 @@
         "move:branding": "cp -r ./dist/branding branding && rm -rf ./dist/branding",
         "build": "yarn clear:build && yarn tsc && yarn move:branding",
         "prettier": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --write",
+        "prettier:check": "prettier \"**/**.{ts,tsx,js,jsx,json,css,scss,html,md}\" --check",
+        "lint": "tsc --noEmit",
         "precommit": "yarn && yarn prettier && yarn build && yarn test",
+        "prepare": "husky",
         "publish:package": "set npm_config_yes=true && npx -p @brightlayer-ui/publish blui-publish",
         "tag:package": "npx -p @brightlayer-ui/tag blui-tag"
     },
@@ -36,6 +39,7 @@
     "devDependencies": {
         "typescript": "^5.0.3",
         "@brightlayer-ui/prettier-config": "^1.0.2",
+        "husky": "^9.1.7",
         "prettier": "^3.0.3"
     },
     "files": [
