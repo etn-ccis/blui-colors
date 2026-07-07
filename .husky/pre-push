@@ -1,12 +1,14 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
 cd "$(dirname "$0")/pre-push.d"
 
 for hook in *; do
     [ -f "$hook" ] || continue
-    bash "./$hook"
-    RESULT=$?
-    if [ $RESULT -ne 0 ]; then
+    if bash "./$hook"; then
+        continue
+    else
+        RESULT=$?
         echo "pre-push.d/$hook returned non-zero: $RESULT, abort push"
         exit $RESULT
     fi
