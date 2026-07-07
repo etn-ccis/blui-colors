@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "$0")/pre-commit.d"
+
+for hook in *; do
+    [ -f "$hook" ] || continue
+    if bash "./$hook"; then
+        continue
+    else
+        RESULT=$?
+        echo "pre-commit.d/$hook returned non-zero: $RESULT, abort commit"
+        exit $RESULT
+    fi
+done
+
+exit 0
