@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v3.2.0 (July 20, 2026)
+
+### Added
+
+-   Added new color token `highlight`, `highlightBlue` and `textFieldContainer`.
+
+### Changed
+
+-   Updated palette color values for blue, white, gray, black, and darkBlack.
+
 ## v3.1.1 (June 20, 2022)
 
 ### Changed
