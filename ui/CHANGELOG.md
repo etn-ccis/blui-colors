@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## v3.2.1 (Unreleased)
+
+### Changed
+
+-  Updated palette color values for blue and red.
+
 ## v3.2.0 (July 20, 2026)
 
 ### Added
