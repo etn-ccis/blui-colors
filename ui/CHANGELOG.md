@@ -1,5 +1,15 @@
 # CHANGELOG
 
+## v3.3.0 (Unreleased)
+
+### Added
+
+-   Added new color token `colorDisabled`, `darkColorDisabled`, `hoverColor`, `darkHoverColor`,`colorDisabledBackground`, and `darkColorDisabledBackground`.
+
+### Changed
+
+-   Updated palette color values for blue and red.
+
 ## v3.2.0 (July 20, 2026)
 
 ### Added

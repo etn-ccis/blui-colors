@@ -191,3 +191,15 @@ export const textFieldContainer: string = '#BDCAD1';
 export const lightThemeDivider: string = '#4D5C6A';
 
 export const darkThemeDivider: string = '#F5FAFF';
+
+export const colorDisabled: string = '#192024';
+
+export const darkColorDisabled: string = '#EBF1F4';
+
+export const hoverColor: string = '#3A454A';
+
+export const darkHoverColor: string = '#DDDFE0';
+
+export const colorDisabledBackground: string = '#192024';
+
+export const darkColorDisabledBackground: string = '#EBF1F4';
