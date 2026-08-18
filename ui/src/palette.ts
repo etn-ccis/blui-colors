@@ -203,3 +203,19 @@ export const colorHoverDark: string = '#DDDFE0';
 export const colorDisabledBackground: string = '#192024';
 
 export const colorDisabledBackgroundDark: string = '#EBF1F4';
+
+// The following colors are used for the primary button states and chip states.
+
+export const onPrimaryHover: string = '#146BBE';
+
+export const onPrimaryPressed: string = '#004D97';
+
+export const pressed: string = '#3A454A';
+
+export const onPrimaryHoverDark: string = '#BCD2FF';
+
+export const onPrimaryPressedDark: string = '#8CA3D1';
+
+export const pressedDark: string = '#DDDFE0';
+
+

@@ -5,6 +5,7 @@
 ### Added
 
 -   Added new color token `colorDisabled`, `darkColorDisabled`, `hoverColor`, `darkHoverColor`,`colorDisabledBackground`, and `darkColorDisabledBackground`.
+-   Added new color token for button and chip `onPrimaryHover`, `onPrimaryPressed`,`pressed`, `onPrimaryHoverDark`,`onPrimaryPressedDark`,`pressedDark`.
 
 ### Changed
 
