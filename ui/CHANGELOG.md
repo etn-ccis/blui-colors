@@ -1,5 +1,16 @@
 # CHANGELOG
 
+## v3.3.0 (October 15, 2026)
+
+### Added
+
+-   Added new color token `colorDisabled`, `darkColorDisabled`, `hoverColor`, `darkHoverColor`,`colorDisabledBackground`, and `darkColorDisabledBackground`.
+-   Added new color token for button and chip `onPrimaryHover`, `onPrimaryPressed`,`pressed`, `onPrimaryHoverDark`,`onPrimaryPressedDark`,`pressedDark`.
+
+### Changed
+
+-   Updated palette color values for blue and red.
+
 ## v3.2.0 (July 20, 2026)
 
 ### Added

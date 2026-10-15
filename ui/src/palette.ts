@@ -18,8 +18,8 @@ export const blue: BLUIColor = {
     500: '#005eb8',
     600: '#0050a5',
     700: '#00458f',
-    800: '#003a7a',
-    900: '#002f66',
+    800: '#002f66',
+    900: '#002550',
     contrastDefaultColor: 'light',
 };
 
@@ -85,16 +85,16 @@ export const vantaBlack: BLUIColor = darkBlack;
 /* Status Colors */
 
 export const red: BLUIColor = {
-    50: '#f9e8e8',
-    100: '#efc5c5',
-    200: '#e59e9e',
-    300: '#da7777',
-    400: '#d2595a',
-    500: '#ca3c3d',
-    600: '#c53637',
-    700: '#bd2e2f',
+    50: '#fce5e5',
+    100: '#f7bdbd',
+    200: '#f19292',
+    300: '#ef6060',
+    400: '#e14a4a',
+    500: '#da2c2c',
+    600: '#d52626',
+    700: '#ca2121',
     800: '#b72727',
-    900: '#ab1a1a',
+    900: '#b60f0f',
     contrastDefaultColor: 'light',
 };
 
@@ -191,3 +191,31 @@ export const textFieldContainer: string = '#BDCAD1';
 export const lightThemeDivider: string = '#4D5C6A';
 
 export const darkThemeDivider: string = '#F5FAFF';
+
+export const colorDisabled: string = '#192024';
+
+export const colorDisabledDark: string = '#EBF1F4';
+
+export const colorHover: string = '#3A454A';
+
+export const colorHoverDark: string = '#DDDFE0';
+
+export const colorDisabledBackground: string = '#192024';
+
+export const colorDisabledBackgroundDark: string = '#EBF1F4';
+
+// The following colors are used for the primary button states and chip states.
+
+export const onPrimaryHover: string = '#146BBE';
+
+export const onPrimaryPressed: string = '#004D97';
+
+export const pressed: string = '#3A454A';
+
+export const onPrimaryHoverDark: string = '#BCD2FF';
+
+export const onPrimaryPressedDark: string = '#8CA3D1';
+
+export const pressedDark: string = '#DDDFE0';
+
+
