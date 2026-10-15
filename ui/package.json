@@ -1,6 +1,6 @@
 {
     "name": "@brightlayer-ui/colors",
-    "version": "3.3.0-alpha.1",
+    "version": "3.3.0",
     "description": "Brightlayer UI colors for Eaton applications",
     "main": "./dist/commonjs/index.js",
     "types": "./dist/commonjs/index.d.ts",
@@ -8,7 +8,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "yarn && tsc --module commonjs --outDir dist/commonjs && tsc --module ES2015 --outDir dist/es2015",
         "publish:package": "set npm_config_yes=true && npx -p @brightlayer-ui/publish@1.1.1-alpha.0 blui-publish",
-        "tag:package": "npx -p @brightlayer-ui/tag blui-tag"
+        "tag:package": "npx -p @brightlayer-ui/tag@1.0.4-alpha.1 blui-tag"
     },
     "repository": {
         "type": "git",
