@@ -16,3 +16,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: echo ${CURRENT_BRANCH} yarn tag:package -b ${CURRENT_BRANCH} -s -blui-colors
+      - name: Tag colors package
+        working-directory: ui
+        run: |
+          echo "Tagging from ${CURRENT_BRANCH}"
+          yarn tag:package -b "${CURRENT_BRANCH}" -s "-blui-colors"
