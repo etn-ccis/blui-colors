@@ -8,6 +8,7 @@ on:
   push:
     branches:
       - master
+      - release-react-color
 
 jobs:
   tag-colors-package:
